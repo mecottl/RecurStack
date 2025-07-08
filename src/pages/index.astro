@@ -7,5 +7,32 @@ import Layout from '../layouts/Header.astro';
 ---
 
 <Layout title='RecurStack'>
-	<h1>Este será el landing page</h1>
+	<section class="hero">
+		<h1>RecurStack</h1>
+		<p>Welcome to RecurStack, your go-to solution for managing recurring tasks and projects.</p>
+		<p>Stay tuned for more updates!</p>
+	</section>
+	<section class="technologies">
+		<h2>Trending Technologies</h2>
+		<ul>
+			<li>React</li>
+			<li>Astro</li>
+			<li>Node.js</li>
+			<li>JavaScript</li>
+		</ul>
+	</section>
+	<section class="videos">
+		<h2>Video Tutorials</h2>
+		<ul>
+			<li><iframe src="https://www.youtube.com/embed/JQf8XLWU-lc" frameborder="0" allowfullscreen></iframe></li>
+			<li><iframe src="https://www.youtube.com/embed/MmfoLqiu1A0" frameborder="0" allowfullscreen></iframe></li>
+			<li><iframe src="https://www.youtube.com/embed/Osy0yuxuEOw" frameborder="0" allowfullscreen></iframe></li>
+		</ul>
+	</section>
+	<section class="images">
+		<h2>Images</h2>
+		<img src="/images/react.jpg" alt="Screenshot 1" />
+		<img src="/images/js.png" alt="Screenshot 2" />
+		<img src="/images/py.png" alt="Screenshot 3" />
+	</section>
 </Layout>
