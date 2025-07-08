@@ -1,6 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import {cssData} from '../../lib/data'
+import InfoCards from '../../components/InfoCard.astro'
 ---
-    <Layout title='CSS'>
-        este es el de css
-    </Layout> 
+<Layout title='CSS'>
+    <div>
+        
+        {
+            cssData.map(card => <InfoCards card = {card}/>)
+        }
+        </div>
+</Layout> 

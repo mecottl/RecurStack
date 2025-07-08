@@ -1,0 +1,23 @@
+---
+import type { Card } from "../lib/data";
+import "../styles/cards.css";
+
+interface Props {
+    card: Card;
+}
+
+const { card } = Astro.props;
+const { title, author, description, img, href } = card;
+---
+
+<a href={href} class="card-container" target="_blank" rel="noopener noferrer">
+    <picture>
+        <img src={img} alt={title} loading="lazy" />
+    </picture>
+
+    <div class="card-text">
+        <h4>{title}</h4>
+        <span>{author}</span>
+        <p>{description}</p>
+    </div>
+</a>
