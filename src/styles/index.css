@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #1A1A1A;
+  color: #D7C9C1;
   line-height: 1.6;
   padding: 2rem;
 }
@@ -16,14 +16,15 @@ section {
   margin-bottom: 4rem;
   padding: 2rem;
   border-radius: 12px;
-  background-color: #1e1e1e;
+  background-color: #2B2B2B;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 /* Hero */
 .hero {
   text-align: center;
-  background: linear-gradient(to right, #762bb3, #795699);
-  color: #fff;
+  background: linear-gradient(to right, #B3261E, #4A3B31);
+  color: #FFECE9;
 }
 
 .hero h1 {
@@ -34,9 +35,11 @@ section {
 .hero p {
   font-size: 1.2rem;
 }
+
 /* tech */
 .technologies h2 {
   text-align: center;
+  color: #FFECE9;
 }
 .technologies ul {
   display: flex;
@@ -48,16 +51,18 @@ section {
 }
 
 .technologies li {
-  background-color: #292929;
+  background-color: #4A3B31;
   padding: 0.75rem 1.25rem;
   border-radius: 8px;
   font-weight: bold;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
+  color: #FFECE9;
 }
 
 /* Videos */
 .videos h2 {
   text-align: center;
+  color: #FFECE9;
 }
 .video-grid {
   display: flex;
@@ -75,13 +80,15 @@ section {
   border: none;
   box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
+
 .video-grid li {
   flex: 1 1 320px;
   display: flex;
   justify-content: center;
 }
+
 /* Images */
-.images{
+.images {
   text-align: center;
 }
 
@@ -92,12 +99,14 @@ section {
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .images img:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(179, 38, 30, 0.4); /* efecto escarlata */
 }
+
 .image-grid {
   display: flex;
   gap: 1rem;

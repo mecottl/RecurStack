@@ -1,37 +1,39 @@
 ---
 import '../styles/index.css';
+import Layout from "../layouts/LayoutIndex.astro"
 ---
 
+<Layout title='dsad'>
 	<section class="hero">
 		<h1>RecurStack</h1>
 		<p>Welcome to RecurStack, your go-to solution for managing recurring tasks and projects.</p>
 		<p>Stay tuned for more updates!</p>
 	</section>
-<section class="technologies">
-    <h2>Trending Technologies</h2>
-    <ul>
-        <li>
-            <!-- React SVG -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.5" fill="#61DAFB"/><g stroke="#61DAFB" stroke-width="1.5"><ellipse rx="10" ry="4.5" transform="matrix(.866 .5 -.866 .5 12 12)" /><ellipse rx="10" ry="4.5" transform="matrix(-.866 .5 .866 .5 12 12)" /><ellipse rx="10" ry="4.5" transform="matrix(0 1 1 0 12 12)" /></g></svg>
-            React
-        </li>
-        <li>
-            <!-- Astro SVG -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L19.09 21.5H4.91L12 2Z" fill="#FF5D01"/><circle cx="12" cy="17" r="2" fill="#fff"/></svg>
-            Astro
-        </li>
-        <li>
-            <!-- Node.js SVG -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L22 7v10l-10 5-10-5V7l10-5z" fill="#8CC84B"/><text x="7" y="17" font-size="7" fill="#fff">Node</text></svg>
-            Node.js
-        </li>
-        <li>
-            <!-- JavaScript SVG -->
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="#F7DF1E"><rect width="24" height="24" rx="4"/><text x="4" y="18" font-size="10" fill="#222">JS</text></svg>
-            JavaScript
-        </li>
-    </ul>
-</section>
+    <section class="technologies">
+        <h2>Trending Technologies</h2>
+        <ul>
+            <li>
+                <!-- React SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.5" fill="#61DAFB"/><g stroke="#61DAFB" stroke-width="1.5"><ellipse rx="10" ry="4.5" transform="matrix(.866 .5 -.866 .5 12 12)" /><ellipse rx="10" ry="4.5" transform="matrix(-.866 .5 .866 .5 12 12)" /><ellipse rx="10" ry="4.5" transform="matrix(0 1 1 0 12 12)" /></g></svg>
+                React
+            </li>
+            <li>
+                <!-- Astro SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L19.09 21.5H4.91L12 2Z" fill="#FF5D01"/><circle cx="12" cy="17" r="2" fill="#fff"/></svg>
+                Astro
+            </li>
+            <li>
+                <!-- Node.js SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L22 7v10l-10 5-10-5V7l10-5z" fill="#8CC84B"/><text x="7" y="17" font-size="7" fill="#fff">Node</text></svg>
+                Node.js
+            </li>
+            <li>
+                <!-- JavaScript SVG -->
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="#F7DF1E"><rect width="24" height="24" rx="4"/><text x="4" y="18" font-size="10" fill="#222">JS</text></svg>
+                JavaScript
+            </li>
+        </ul>
+    </section>
 	<section class="videos">
 		<h2>Video Tutorials</h2>
 		<ul class="video-grid">
@@ -47,5 +49,7 @@ import '../styles/index.css';
 			<li><img src="/images/js.png" alt="JavaScript Screenshot" /></li>
 			<li><img src="/images/py.png" alt="Python Screenshot" /></li>
 		</ul>
-	</section>
+	</section>    
+</Layout>
+
 
