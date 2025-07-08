@@ -1,0 +1,80 @@
+:root {
+  /* 🌸 Colores cálidos (rosas y rojos) */
+  --color-rose-light: #FE7485;
+  --color-rose: #F64B5E;
+  --color-red: #E12A3D;
+  --color-red-dark: #C50315;
+
+  /* ☀️ Colores amarillos y dorados */
+  --color-yellow-light: #FFF39E;
+  --color-yellow: #FFEE81;
+  --color-gold: #E0CC57;
+  --color-gold-dark: #C2AA2D;
+
+  /* 🎨 Aplicación en UI */
+  --color-background: var(--color-yellow); /* Fondo general claro */
+  --color-header: var(--color-red);         /* Fondo general claro */
+  --color-surface: #FFF9F0;                 /* Tarjetas / contenedores */
+  --color-button-primary: var(--color-rose);       /* Botones principales */
+  --color-button-secondary: var(--color-gold);     /* Botones secundarios */
+  --color-link: var(--color-yellow);              /* Enlaces, detalles */
+  --color-button-hover: var(--color-rose-light);   /* Hover en botones */
+  --color-button-text: #FFFFFF;                   /* Texto sobre botones fuertes */
+
+  --color-border: #EAD9C4;                  /* Bordes suaves */
+  --color-text-main: #2A2A2A;               /* Texto principal */
+  --color-text-secondary: #6E6E6E;          /* Texto secundario */
+
+  /* ☁️ Sombras */
+  --shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-strong: 0 6px 20px rgba(0, 0, 0, 0.18);
+
+  /* 🎬 Transiciones */
+  --transition-base: 0.3s ease-in-out;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌐 Contenedor principal */
+.container {
+  background-color: var(--color-header);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* 📚 Sección de recursos */
+.recursos {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+/* 🔗 Enlaces de recursos */
+.recursos a {
+  background-color: var(--color-button-primary);
+  text-align: center;
+  border-radius: 10px;
+  flex: 1;
+  text-decoration: none;
+  color: var(--color-button-text);
+  padding: 12px 16px;
+  font-weight: 500;
+  box-shadow: var(--shadow-soft);
+  transition: background-color var(--transition-base), transform var(--transition-base);
+}
+
+/* 🖱️ Efecto al pasar el cursor */
+.recursos a:hover {
+  background-color: var(--color-button-hover);
+  transform: translateY(-2px);
+}

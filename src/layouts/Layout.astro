@@ -1,0 +1,39 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import HeaderRecurso from "../components/HeaderRecurso.astro";
+import Home from "../components/Home.astro"
+import "../styles/Layout.css";
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body>
+		<header class="container">
+			<div class="recursos">
+				<Home></Home>
+				<HeaderRecurso href="/Recursos/HTML"> HTML </HeaderRecurso>
+				<HeaderRecurso title="CSS" href="/Recursos/CSS">
+					CSS
+				</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/JS"> JS </HeaderRecurso>
+				<HeaderRecurso href="/Recursos/SQL"> SQL </HeaderRecurso>
+				<HeaderRecurso href="/Recursos/Icons"> SVG </HeaderRecurso>
+				<HeaderRecurso href="/Recursos/Mas">Mas</HeaderRecurso>
+			</div>
+		</header>
+
+		<slot />
+	</body>
+</html>
