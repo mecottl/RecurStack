@@ -5,7 +5,6 @@ import Layout from '../layouts/Layout.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout title='RecurStack'>
 	<section class="hero">
 		<h1>RecurStack</h1>
 		<p>Welcome to RecurStack, your go-to solution for managing recurring tasks and projects.</p>
@@ -22,7 +21,7 @@ import Layout from '../layouts/Layout.astro';
 	</section>
 	<section class="videos">
 		<h2>Video Tutorials</h2>
-		<ul>
+		<ul class="video-grid">
 			<li><iframe src="https://www.youtube.com/embed/JQf8XLWU-lc" frameborder="0" allowfullscreen></iframe></li>
 			<li><iframe src="https://www.youtube.com/embed/MmfoLqiu1A0" frameborder="0" allowfullscreen></iframe></li>
 			<li><iframe src="https://www.youtube.com/embed/Osy0yuxuEOw" frameborder="0" allowfullscreen></iframe></li>
@@ -34,4 +33,4 @@ import Layout from '../layouts/Layout.astro';
 		<img src="/images/js.png" alt="Screenshot 2" />
 		<img src="/images/py.png" alt="Screenshot 3" />
 	</section>
-</Layout>
+
