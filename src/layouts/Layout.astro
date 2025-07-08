@@ -21,7 +21,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<header class="container">
-			<div class="recursos">
+			<div class="link-header">
 				<Home></Home>
 				<HeaderRecurso href="/Recursos/HTML"> HTML </HeaderRecurso>
 				<HeaderRecurso title="CSS" href="/Recursos/CSS">
@@ -33,7 +33,8 @@ const { title } = Astro.props;
 				<HeaderRecurso href="/Recursos/Mas">Mas</HeaderRecurso>
 			</div>
 		</header>
-
-		<slot />
+		<main class="container-page">
+				<slot />
+		</main>
 	</body>
 </html>

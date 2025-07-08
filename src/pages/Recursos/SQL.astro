@@ -1,6 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro'
+import {sqlData} from '../../lib/data'
+import InfoCards from '../../components/InfoCard.astro'
 ---
-    <Layout title='SQL'>
-        este es el de SQL
-    </Layout> 
+<Layout title='SQL'>
+    <div>
+        
+        {
+            sqlData.map(card => <InfoCards card = {card}/>)
+        }
+        </div>
+</Layout> 
