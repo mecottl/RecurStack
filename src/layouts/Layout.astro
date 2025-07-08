@@ -1,8 +1,9 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import HeaderRecurso from "../components/HeaderRecurso.astro";
-import Home from "../components/Home.astro"
+import Home from "../components/Home.astro";
 import "../styles/Layout.css";
+
 interface Props {
 	title: string;
 }
@@ -13,28 +14,31 @@ const { title } = Astro.props;
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content={`Recursos útiles para programadores - Categoría: ${title}`} />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{title} | Recursos Dev</title>
 		<ViewTransitions />
 	</head>
 	<body>
 		<header class="container">
-			<div class="link-header">
-				<Home></Home>
-				<HeaderRecurso href="/Recursos/HTML"> HTML </HeaderRecurso>
-				<HeaderRecurso title="CSS" href="/Recursos/CSS">
-					CSS
-				</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/JS"> JS </HeaderRecurso>
-				<HeaderRecurso href="/Recursos/SQL"> SQL </HeaderRecurso>
-				<HeaderRecurso href="/Recursos/Icons"> SVG </HeaderRecurso>
-				<HeaderRecurso href="/Recursos/Mas">Mas</HeaderRecurso>
-			</div>
+			<nav class="link-header" aria-label="Navegación principal">
+				<Home />
+				<HeaderRecurso href="/Recursos/HTML">HTML</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/CSS">CSS</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/JS">JS</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/SQL">SQL</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/GIT">GIT</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/Diseño">Diseño</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/Deploy">Deploy</HeaderRecurso>
+				<HeaderRecurso href="/Recursos/Documentation">Documentation</HeaderRecurso>
+				
+			</nav>
 		</header>
-		<main class="container-page">
-				<slot />
+
+		<main class="container-page" role="main">
+			<slot />
 		</main>
 	</body>
 </html>

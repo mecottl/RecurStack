@@ -1,12 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import { htmlData } from '../../lib/data'
+import { designData } from '../../lib/data'
 import InfoCards from '../../components/InfoCard.astro'
 ---
-<Layout title='HTML'>
+<Layout title='Diseño'>
     <div>
         {
-            htmlData.map(card => <InfoCards card={card} />)
+            designData.map(card => <InfoCards card={card} />)
         }
     </div>
 </Layout>
