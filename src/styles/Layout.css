@@ -1,80 +1,92 @@
 :root {
-  /* 🌸 Colores cálidos (rosas y rojos) */
-  --color-rose-light: #FE7485;
-  --color-rose: #F64B5E;
-  --color-red: #E12A3D;
-  --color-red-dark: #C50315;
+  /* Tonos neutros - para fondo, texto y bordes */
+  --bg-primary: #37332B;       /* Fondo principal oscuro */
+  --bg-secondary: #433F36;     /* Fondo secundario o tarjetas */
+  --border-color: #565248;     /* Bordes o elementos suaves */
+  --text-color: #706D60;       /* Texto secundario o apagado */
 
-  /* ☀️ Colores amarillos y dorados */
-  --color-yellow-light: #FFF39E;
-  --color-yellow: #FFEE81;
-  --color-gold: #E0CC57;
-  --color-gold-dark: #C2AA2D;
-
-  /* 🎨 Aplicación en UI */
-  --color-background: var(--color-yellow); /* Fondo general claro */
-  --color-header: var(--color-red);         /* Fondo general claro */
-  --color-surface: #FFF9F0;                 /* Tarjetas / contenedores */
-  --color-button-primary: var(--color-rose);       /* Botones principales */
-  --color-button-secondary: var(--color-gold);     /* Botones secundarios */
-  --color-link: var(--color-yellow);              /* Enlaces, detalles */
-  --color-button-hover: var(--color-rose-light);   /* Hover en botones */
-  --color-button-text: #FFFFFF;                   /* Texto sobre botones fuertes */
-
-  --color-border: #EAD9C4;                  /* Bordes suaves */
-  --color-text-main: #2A2A2A;               /* Texto principal */
-  --color-text-secondary: #6E6E6E;          /* Texto secundario */
-
-  /* ☁️ Sombras */
-  --shadow-soft: 0 1px 6px rgba(0, 0, 0, 0.05);
-  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.12);
-  --shadow-strong: 0 6px 20px rgba(0, 0, 0, 0.18);
-
-  /* 🎬 Transiciones */
-  --transition-base: 0.3s ease-in-out;
+  /* Colores de acento - para botones, alertas o branding */
+  --accent-primary: #FE3B26;   /* Acento principal / botón activo */
+  --accent-hover: #F21904;     /* Hover o foco */
+  --accent-strong: #D61201;    /* Enfasis o alerta */
+  --accent-dark: #B90F01;      /* Versión más oscura, botones oscuros o hover */
 }
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--bg-secondary);
 }
 
 /* 🌐 Contenedor principal */
 .container {
-  background-color: var(--color-header);
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--bg-primary);
   margin: 0;
-  flex-wrap: wrap;
   padding: 10px;
+  overflow: hidden;
 }
 
 /* 📚 Sección de recursos */
 .link-header {
   display: flex;
-  gap: 10px;
   width: 100%;
+  flex-wrap: wrap;
+  align-items: center;  
+  justify-content: space-around ;
+  gap: 5px;
 }
 
 /* 🔗 Enlaces de recursos */
-.link-header a {
-  background-color: var(--color-button-primary);
-  text-align: center;
-  border-radius: 10px;
-  flex: 1;
-  text-decoration: none;
-  color: var(--color-button-text);
-  padding: 12px 16px;
-  font-weight: 500;
-  box-shadow: var(--shadow-soft);
-  transition: background-color var(--transition-base), transform var(--transition-base);
+ .btn-class-name {
+  border-radius: .5em;
+  transition: .3s;
+  background-color: rgba(254, 59, 38 , .2);
+  color: rgba(254, 59, 38 );
+  fill:rgba(254, 59, 38 );
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: x-large;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border: 2px solid rgba(254, 59, 38 );
+  box-shadow: 0 0 10px rgba(254, 59, 38 ,.4);
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: .5em 1em;
 }
 
-/* 🖱️ Efecto al pasar el cursor */
-.link-header a:hover {
-  background-color: var(--color-button-hover);
-  transform: translateY(-2px);
+.btn-class-name:hover {
+  box-shadow: 0 0 0 5px rgba(254, 59, 38 ,.5);
+}
+
+.btn-class-name span {
+  transform: scale(.8);
+  transition: .3s;
+}
+
+.btn-class-name:hover span {
+  transform: scale(1);
+}
+
+.btn-class-name svg {
+  font-size: 0;
+  transform: scale(0.5) translateX(0%) rotate(-180deg);
+  transition: .3s;
+}
+
+.btn-class-name:hover svg {
+  font-size: 20px;
+  transform: scale(1) translateX(20%) rotate(0deg);
+}
+
+.btn-class-name:active {
+  transition: 0s;
+  box-shadow: 0 0 0 5px rgb(var(--color));
 }
 
 .container-page{
