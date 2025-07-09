@@ -22,8 +22,8 @@ const { title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body>
-		<header class="container">
-			<nav class="link-header" aria-label="Navegación principal">
+		<header class="nav-container">
+			<nav class="nav-btn" aria-label="Navegación principal">
 				<Home />
 				<HeaderRecurso href="/Recursos/HTML">HTML</HeaderRecurso>
 				<HeaderRecurso href="/Recursos/CSS">CSS</HeaderRecurso>
@@ -37,8 +37,8 @@ const { title } = Astro.props;
 			</nav>
 		</header>
 
-		<main class="container-page" role="main">
-			<slot />
+		<main role="main">		
+				<slot />
 		</main>
 	</body>
 </html>

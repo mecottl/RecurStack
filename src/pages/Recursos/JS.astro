@@ -2,9 +2,11 @@
 import Layout from '../../layouts/Layout.astro'
 import { jsData } from '../../lib/data'
 import InfoCards from '../../components/InfoCard.astro'
+import '../../styles/pages.css'
+
 ---
 <Layout title='JavaScript'>
-    <div>
+    <div class="cards">
         {
             jsData.map(card => <InfoCards card={card} />)
         }
