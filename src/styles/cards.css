@@ -9,13 +9,11 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
   text-decoration: none;
-
-  width: 100%;          /* Asegura que la card ocupe el ancho del grid cell */
-  max-width: 100%;      /* 💡 Evita que rompa el layout por ancho fijo */
-  min-width: 0;         /* 💡 Obliga a cortar o ajustar el contenido */
+  width: 100%;
+  max-width: 300px; 
+  min-width: 200px;         
   box-sizing: border-box;
-
-  flex: 1 1 auto;       /* ✅ Deja que se adapte naturalmente dentro de su celda */
+  flex: 1 1 250px;   
 }
 
 

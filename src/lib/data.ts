@@ -30,7 +30,64 @@ export const htmlData: Card[] = [
         description: 'Lista de verificación para buenas prácticas HTML',
         img: 'https://frontendchecklist.io/img/logo.png',
         href: 'https://frontendchecklist.io/'
-    }
+    },
+    {
+    id: '4',
+    title: 'W3Schools HTML',
+    author: 'W3Schools',
+    description: 'Tutorial y referencia HTML con ejemplos interactivos',
+    img: '',
+    href: 'https://www.w3schools.com/html/'
+},
+{
+    id: '5',
+    title: 'HTML Dog',
+    author: 'HTML Dog',
+    description: 'Tutoriales de HTML desde nivel básico hasta avanzado',
+    img: '',
+    href: 'https://htmldog.com/guides/html/'
+},
+{
+    id: '6',
+    title: 'FreeCodeCamp HTML',
+    author: 'freeCodeCamp',
+    description: 'Curso gratuito de HTML5 interactivo',
+    img: '',
+    href: 'https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5'
+},
+{
+    id: '7',
+    title: 'HTML CheatSheet',
+    author: 'OverAPI',
+    description: 'Resumen visual de HTML para consultar rápidamente',
+    img: '',
+    href: 'https://overapi.com/html'
+},
+{
+    id: '8',
+    title: 'CodePen Challenges',
+    author: 'CodePen',
+    description: 'Retos semanales para practicar HTML y CSS',
+    img: '',
+    href: 'https://codepen.io/challenges'
+},
+{
+    id: '9',
+    title: 'HTML5 Doctor',
+    author: 'HTML5Doctor.com',
+    description: 'Artículos y guías sobre elementos semánticos de HTML5',
+    img: '',
+    href: 'http://html5doctor.com/'
+},
+{
+    id: '10',
+    title: 'MarkSheet',
+    author: 'MarkSheet.io',
+    description: 'Curso gratuito para aprender HTML y CSS desde cero',
+    img: '',
+    href: 'https://marksheet.io/'
+}
+
 ]
 
 export const gitData: Card[] = [
@@ -57,7 +114,64 @@ export const gitData: Card[] = [
         description: 'Encuentra el comando Git ideal rápidamente',
         img: 'https://gitexplorer.com/favicon.png',
         href: 'https://gitexplorer.com/'
-    }
+    },
+    {
+    id: '4',
+    title: 'GitHub Learning Lab',
+    author: 'GitHub',
+    description: 'Tutoriales interactivos para aprender Git y GitHub',
+    img: '',
+    href: 'https://lab.github.com/'
+},
+{
+    id: '5',
+    title: 'Git Cheatsheet',
+    author: 'GitHub Training',
+    description: 'Hoja de referencia rápida con comandos de Git',
+    img: '',
+    href: 'https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf'
+},
+{
+    id: '6',
+    title: 'Visualizing Git',
+    author: 'git-school',
+    description: 'Visualizador interactivo de comandos Git',
+    img: '',
+    href: 'https://git-school.github.io/visualizing-git/'
+},
+{
+    id: '7',
+    title: 'Oh Shit, Git!',
+    author: 'Katie Sylor-Miller',
+    description: 'Soluciones rápidas a errores comunes de Git',
+    img: '',
+    href: 'https://ohshitgit.com/'
+},
+{
+    id: '8',
+    title: 'Git Immersion',
+    author: 'Neo',
+    description: 'Guía práctica paso a paso para aprender Git',
+    img: '',
+    href: 'http://gitimmersion.com/'
+},
+{
+    id: '9',
+    title: 'Pro Git Book',
+    author: 'Scott Chacon',
+    description: 'Libro completo y gratuito sobre Git',
+    img: '',
+    href: 'https://git-scm.com/book/en/v2'
+},
+{
+    id: '10',
+    title: 'Git Kraken Guide',
+    author: 'GitKraken',
+    description: 'Recursos y guía visual para Git con GitKraken',
+    img: '',
+    href: 'https://www.gitkraken.com/learn/git/tutorials'
+}
+
 ]
 
 export const cssData: Card[]=[
@@ -111,6 +225,38 @@ export const cssData: Card[]=[
     img: 'https://hype4.academy/tools/glassmorphism-generator/logo.png',
     href: 'https://mycolor.space/'
 },
+{
+    id: '7',
+    title: 'Flexbox Froggy',
+    author: 'Thomas Park',
+    description: 'Juego para aprender Flexbox de manera interactiva',
+    img: '',
+    href: 'https://flexboxfroggy.com/'
+},
+{
+    id: '8',
+    title: 'Grid Garden',
+    author: 'Thomas Park',
+    description: 'Juego para aprender CSS Grid con zanahorias',
+    img: '',
+    href: 'https://cssgridgarden.com/'
+},
+{
+    id: '9',
+    title: 'CSSBattle',
+    author: 'Community',
+    description: 'Juego competitivo para escribir el CSS más preciso y corto posible',
+    img: '',
+    href: 'https://cssbattle.dev/'
+},
+{
+    id: '10',
+    title: 'CSS Tricks',
+    author: 'Chris Coyier',
+    description: 'Blog con trucos, guías y snippets de CSS',
+    img: '',
+    href: 'https://css-tricks.com/'
+}
 
 
 ]
@@ -148,7 +294,56 @@ export const sqlData: Card[]=[
     description: 'Crea diagramas ER visualmente',
     img: 'https://dbdiagram.io/images/logo.png',
     href: 'https://dbdiagram.io/'
+},
+{
+    id: '5',
+    title: 'Mode SQL Tutorial',
+    author: 'Mode Analytics',
+    description: 'Curso interactivo de SQL con datasets reales',
+    img: '',
+    href: 'https://mode.com/sql-tutorial/'
+},
+{
+    id: '6',
+    title: 'SQLZoo',
+    author: 'SQLZoo',
+    description: 'Tutorial y ejercicios interactivos para SQL',
+    img: '',
+    href: 'https://sqlzoo.net/'
+},
+{
+    id: '7',
+    title: 'W3Schools SQL',
+    author: 'W3Schools',
+    description: 'Tutorial interactivo de SQL para principiantes',
+    img: '',
+    href: 'https://www.w3schools.com/sql/'
+},
+{
+    id: '8',
+    title: 'LeetCode SQL',
+    author: 'LeetCode',
+    description: 'Problemas de SQL para entrevistas técnicas',
+    img: '',
+    href: 'https://leetcode.com/problemset/database/'
+},
+{
+    id: '9',
+    title: 'StrataScratch',
+    author: 'StrataScratch',
+    description: 'Ejercicios de SQL con datasets reales',
+    img: '',
+    href: 'https://www.stratascratch.com/'
+},
+{
+    id: '10',
+    title: 'Hackerrank SQL',
+    author: 'Hackerrank',
+    description: 'Práctica y desafíos SQL con rankings',
+    img: '',
+    href: 'https://www.hackerrank.com/domains/sql'
 }
+
 
 ]
 
@@ -176,7 +371,64 @@ export const jsData: Card[]=[
     description: 'Snippets útiles de JavaScript y más',
     img: 'https://www.30secondsofcode.org/icons/icon-96x96.png',
     href: 'https://www.30secondsofcode.org'
+},
+{
+    id: '4',
+    title: 'Codewars',
+    author: 'Community',
+    description: 'Plataforma de desafíos para practicar JS y más',
+    img: '',
+    href: 'https://www.codewars.com/'
+},
+{
+    id: '5',
+    title: 'JavaScript 30',
+    author: 'Wes Bos',
+    description: '30 proyectos para practicar JavaScript puro',
+    img: '',
+    href: 'https://javascript30.com/'
+},
+{
+    id: '6',
+    title: 'JSFiddle',
+    author: 'JSFiddle',
+    description: 'Entorno online para probar y compartir código JS',
+    img: '',
+    href: 'https://jsfiddle.net/'
+},
+{
+    id: '7',
+    title: 'CodePen',
+    author: 'CodePen',
+    description: 'Editor y comunidad para practicar HTML, CSS y JS',
+    img: '',
+    href: 'https://codepen.io/'
+},
+{
+    id: '8',
+    title: 'LeetCode',
+    author: 'LeetCode Inc.',
+    description: 'Problemas de algoritmos para entrevistas técnicas',
+    img: '',
+    href: 'https://leetcode.com/'
+},
+{
+    id: '9',
+    title: 'Eloquent JavaScript',
+    author: 'Marijn Haverbeke',
+    description: 'Libro interactivo gratuito de JavaScript moderno',
+    img: '',
+    href: 'https://eloquentjavascript.net/'
+},
+{
+    id: '10',
+    title: 'RegexOne',
+    author: 'Community',
+    description: 'Practica expresiones regulares con ejercicios de JS',
+    img: '',
+    href: 'https://regexone.com/'
 }
+
 ]
 
 export const deployData: Card[]=[
@@ -197,13 +449,55 @@ export const deployData: Card[]=[
     href: 'https://vercel.com/'
 },
 {
-    id: '3',
+    id: '5',
+    title: 'Surge',
+    author: 'Surge',
+    description: 'Despliegue simple de sitios estáticos desde la terminal',
+    img: '',
+    href: 'https://surge.sh/'
+},
+{
+    id: '6',
     title: 'Render',
-    author: 'Render Inc.',
-    description: 'Backend y frontend hosting gratuito y fácil',
-    img: 'https://render.com/images/favicon.png',
+    author: 'Render.com',
+    description: 'Despliegue gratuito de frontend y backend con bases de datos',
+    img: '',
     href: 'https://render.com/'
+},
+{
+    id: '7',
+    title: 'Glitch',
+    author: 'Glitch',
+    description: 'Despliegue instantáneo de apps web, ideal para prototipos',
+    img: '',
+    href: 'https://glitch.com/'
+},
+{
+    id: '8',
+    title: 'Fly.io',
+    author: 'Fly.io',
+    description: 'Despliegue de apps en servidores cercanos al usuario',
+    img: '',
+    href: 'https://fly.io/'
+},
+{
+    id: '9',
+    title: 'Firebase Hosting',
+    author: 'Google',
+    description: 'Hosting para sitios web rápidos y seguros con HTTPS',
+    img: '',
+    href: 'https://firebase.google.com/products/hosting'
+},
+{
+    id: '10',
+    title: 'GitHub Pages Docs',
+    author: 'GitHub',
+    description: 'Documentación oficial para desplegar con GitHub Pages',
+    img: '',
+    href: 'https://docs.github.com/en/pages'
 }
+
+
 
 ]
 
@@ -231,7 +525,40 @@ export const documentationData: Card[]=[
     description: 'Documentación oficial para HTML, CSS y JS',
     img: 'https://developer.mozilla.org/favicon.ico',
     href: 'https://developer.mozilla.org/'
+},
+{
+    id: '6',
+    title: 'W3Schools',
+    author: 'W3Schools',
+    description: 'Tutoriales y referencias rápidas de HTML, CSS, JS, SQL y más',
+    img: '',
+    href: 'https://www.w3schools.com/'
+},
+{
+    id: '8',
+    title: 'Stack Overflow',
+    author: 'Stack Exchange',
+    description: 'Respuestas técnicas y ejemplos prácticos de todo tipo de tecnología',
+    img: '',
+    href: 'https://stackoverflow.com/'
+},
+{
+    id: '9',
+    title: 'TypeScript Handbook',
+    author: 'Microsoft',
+    description: 'Guía oficial y documentación de TypeScript',
+    img: '',
+    href: 'https://www.typescriptlang.org/docs/'
+},
+{
+    id: '10',
+    title: 'Node.js Docs',
+    author: 'OpenJS Foundation',
+    description: 'Documentación oficial de Node.js',
+    img: '',
+    href: 'https://nodejs.org/en/docs'
 }
+
 
 ]
 
@@ -283,6 +610,56 @@ export const designData: Card[] = [
     description: 'Herramienta de dibujo colaborativa estilo boceto, ideal para wireframes, diagramas y esquemas UI',
     img: 'https://excalidraw.com/favicon.png',
     href: 'https://excalidraw.com/'
+},
+{
+    id: '4',
+    title: 'Dribbble',
+    author: 'Comunidad',
+    description: 'Inspiración de diseño UI/UX de miles de creativos',
+    img: '',
+    href: 'https://dribbble.com/'
+},
+{
+    id: '5',
+    title: 'Behance',
+    author: 'Adobe',
+    description: 'Portafolios e ideas de diseño, ilustración y UI',
+    img: '',
+    href: 'https://www.behance.net/'
+},
+{
+    id: '6',
+    title: 'Figma Community',
+    author: 'Figma',
+    description: 'Recursos, plantillas e inspiración de diseño UI gratuitos',
+    img: '',
+    href: 'https://www.figma.com/community'
+},
+{
+    id: '7',
+    title: 'Fontpair',
+    author: 'Fontpair',
+    description: 'Combinaciones de tipografías listas para usar',
+    img: '',
+    href: 'https://www.fontpair.co/'
+},
+{
+    id: '8',
+    title: 'Color Hunt',
+    author: 'Gal Shir',
+    description: 'Paletas de colores modernas y listas para copiar',
+    img: '',
+    href: 'https://colorhunt.co/'
+},
+
+{
+    id: '10',
+    title: 'UI Design Daily',
+    author: 'UI Design Daily',
+    description: 'Recursos gratuitos de diseño UI: componentes, pantallas y más',
+    img: '',
+    href: 'https://uidesigndaily.com/'
 }
+
 
 ]

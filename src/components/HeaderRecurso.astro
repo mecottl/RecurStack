@@ -2,8 +2,7 @@
 const { href = "../#" } = Astro.props;
 ---
 
-<a class="btn-href" href={href}>
-        <span class="text">
-                <slot />
-        </span>
+<a class="btn-href" data-text="Awesome" href={href}>
+    <span class="actual-text">&nbsp;<slot/>&nbsp;</span>
+    <span aria-hidden="true" class="hover-text">&nbsp;<slot/>&nbsp;</span>
 </a>

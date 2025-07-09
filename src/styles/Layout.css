@@ -1,79 +1,144 @@
 :root {
-  --bg: #2F4858;
-  --bg-gradiente: background-image: linear-gradient(to bottom, #2f4858, #315076, #4f538e, #7f4d99, #b23e91);
+  --bg: #121212;
+  --bg-secundary: #1e1e1e;
+  --text: #e0e0e0;
+  --text-secundary: #a0a0a0;
+  --color-fuerte: #b90f01;
+  --color-medio: #d61201;
+  --color-claro: #f21904;
+  --color-muyclaro: #fe3b26;
 }
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #38527f;
+  background-color: var(--bg);
+  display: flex;
+  min-height: 100vh;
 }
 
-/* 🌐 Contenedor principal */
 .nav-container {
-  width: 100%;
+  width: 220px;
+  min-width: 200px;
+  height: 100vh;
   box-sizing: border-box;
-  background-color: #2f4858;
+  /* Fondo transparente, puedes ajustar el alfa */
+  background-color: transparent; 
+  padding: 0 10px 0;
+  overflow-y: auto;
+  position: relative;
+  top: 0;
+  left: 0;
   margin: 0;
-  padding: 10px 10px;
-  overflow: hidden;
+}
+
+.nav-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;      /* grosor del "borde" */
+  height: 100%;    /* todo el alto del contenedor */
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent 10%,
+    var(--text-secundary) 50%,  /* centro opaco */
+    transparent 90%
+  );
 }
 
 .nav-btn {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
-  text-align: center;
+  height: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0;
+}
+
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0;
 }
 
 .btn-href {
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px ;
-  border: 3px solid #FF0072;
-  border-radius: 6px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  color: #FF0072;
+  letter-spacing: 3px;
   text-decoration: none;
-  transition: 0.3s ease all;
-  z-index: 1;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+  color: var(--text);
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  line-height: 2rem;
+  overflow: hidden;
 }
 
-.btn-href:before {
-  transition: 0.5s all ease;
+.hover-text {
   position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: '';
-  background-color: #FF0072;
-  z-index: -1;
+  box-sizing: border-box;
+  color: var(--color-muyclaro);
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 3px;
+  width: 0%;
+  inset: 0;
+  border-right: 6px solid var(--color-medio);
+  overflow: hidden;
+  line-height: 2rem;
+  transition: width .6s ease, color .6s ease;
+  transition-delay: 0.3s;
 }
 
-.btn-href:hover, .btn-href:focus {
-  color: white;
+.btn-href:hover {
+  color: transparent;
 }
 
-.btn-href:hover:before, .btn-href:focus:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
+.btn-href:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 20px var(--color-claro));
+  transition-delay: 0.3s; 
 }
 
-.btn-href:active {
-  transform: scale(0.9);
+.btn-href:not(:hover) .hover-text {
+  color: transparent;
+  transition-delay: 0s; 
 }
 
-.home{
-  border: 2px solid white;
+
+.home {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
+.home img {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+}
+
+.divider {
+  width: 100%;        /* toda la anchura */
+  height: 2px;        /* grosor visible */
+  pointer-events: none;
+  background: linear-gradient(
+    to right,         /* gradiente horizontal */
+    transparent 10%,  
+    var(--text-secundary) 50%,  /* centro opaco */
+    transparent 90%
+  );
+  padding: 0;
+  margin: 0;
+}
+
