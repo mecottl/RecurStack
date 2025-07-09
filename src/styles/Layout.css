@@ -1,98 +1,79 @@
 :root {
-  /* Tonos neutros - para fondo, texto y bordes */
-  --bg-primary: #37332B;       /* Fondo principal oscuro */
-  --bg-secondary: #433F36;     /* Fondo secundario o tarjetas */
-  --border-color: #565248;     /* Bordes o elementos suaves */
-  --text-color: #706D60;       /* Texto secundario o apagado */
-
-  /* Colores de acento - para botones, alertas o branding */
-  --accent-primary: #FE3B26;   /* Acento principal / botón activo */
-  --accent-hover: #F21904;     /* Hover o foco */
-  --accent-strong: #D61201;    /* Enfasis o alerta */
-  --accent-dark: #B90F01;      /* Versión más oscura, botones oscuros o hover */
+  --bg: #2F4858;
+  --bg-gradiente: background-image: linear-gradient(to bottom, #2f4858, #315076, #4f538e, #7f4d99, #b23e91);
 }
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--bg-secondary);
+  background-color: #38527f;
 }
 
 /* 🌐 Contenedor principal */
-.container {
+.nav-container {
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--bg-primary);
+  background-color: #2f4858;
   margin: 0;
-  padding: 10px;
+  padding: 10px 10px;
   overflow: hidden;
 }
 
-/* 📚 Sección de recursos */
-.link-header {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;  
-  justify-content: space-around ;
-  gap: 5px;
-}
-
-/* 🔗 Enlaces de recursos */
- .btn-class-name {
-  border-radius: .5em;
-  transition: .3s;
-  background-color: rgba(254, 59, 38 , .2);
-  color: rgba(254, 59, 38 );
-  fill:rgba(254, 59, 38 );
-  font-family: monospace;
-  font-weight: bolder;
-  font-size: x-large;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  cursor: pointer;
-  border: 2px solid rgba(254, 59, 38 );
-  box-shadow: 0 0 10px rgba(254, 59, 38 ,.4);
-  outline: none;
-  display: flex;
-  align-items: center;
-  padding: .5em 1em;
-}
-
-.btn-class-name:hover {
-  box-shadow: 0 0 0 5px rgba(254, 59, 38 ,.5);
-}
-
-.btn-class-name span {
-  transform: scale(.8);
-  transition: .3s;
-}
-
-.btn-class-name:hover span {
-  transform: scale(1);
-}
-
-.btn-class-name svg {
-  font-size: 0;
-  transform: scale(0.5) translateX(0%) rotate(-180deg);
-  transition: .3s;
-}
-
-.btn-class-name:hover svg {
-  font-size: 20px;
-  transform: scale(1) translateX(20%) rotate(0deg);
-}
-
-.btn-class-name:active {
-  transition: 0s;
-  box-shadow: 0 0 0 5px rgb(var(--color));
-}
-
-.container-page{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 20px;
+.nav-btn {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-href {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px ;
+  border: 3px solid #FF0072;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #FF0072;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.btn-href:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #FF0072;
+  z-index: -1;
+}
+
+.btn-href:hover, .btn-href:focus {
+  color: white;
+}
+
+.btn-href:hover:before, .btn-href:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.btn-href:active {
+  transform: scale(0.9);
+}
+
+.home{
+  border: 2px solid white;
 }

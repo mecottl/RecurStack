@@ -2,12 +2,13 @@
 import Layout from '../../layouts/Layout.astro'
 import {cssData} from '../../lib/data'
 import InfoCards from '../../components/InfoCard.astro'
+import '../../styles/pages.css'
 ---
 <Layout title='CSS'>
-    <div>
+    <div class="cards">
         
         {
             cssData.map(card => <InfoCards card = {card}/>)
         }
-        </div>
+    </div>
 </Layout> 

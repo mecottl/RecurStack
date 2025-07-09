@@ -102,7 +102,16 @@ export const cssData: Card[]=[
     description: 'Generador de efectos glassmorphism en CSS',
     img: 'https://hype4.academy/tools/glassmorphism-generator/logo.png',
     href: 'https://hype4.academy/tools/glassmorphism-generator'
-}
+},
+{
+    id: '6',
+    title: 'Color Space',
+    author: '',
+    description: 'Generador de paletas desde un solo color',
+    img: 'https://hype4.academy/tools/glassmorphism-generator/logo.png',
+    href: 'https://mycolor.space/'
+},
+
 
 ]
 

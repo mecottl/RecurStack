@@ -2,9 +2,11 @@
 import Layout from '../../layouts/Layout.astro'
 import { deployData } from '../../lib/data'
 import InfoCards from '../../components/InfoCard.astro'
+import '../../styles/pages.css'
+
 ---
 <Layout title='Deploy'>
-    <div>
+    <div class="cards">
         {
             deployData.map(card => <InfoCards card={card} />)
         }
