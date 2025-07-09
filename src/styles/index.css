@@ -12,12 +12,13 @@ body {
   padding: 2rem;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
   padding: 2rem;
-  border-radius: 12px;
-  background-color: #2B2B2B;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Hero */
@@ -122,9 +123,6 @@ section {
   justify-content: center;
 }
 
-html, body{
-    scroll-behavior: smooth;
-}
 
 .banner .content{
     font-family: "Odibee Sans", sans-serif;
@@ -214,4 +212,64 @@ footer .content{
         opacity: 1;
         transform: translateY(0) scale(1);
     }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #D7C9C1;
+  padding: .5rem 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  position: flixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #B3261E; /* Acento escarlata */
+  text-decoration: none;
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.recursos {
+  display: flex;
+  gap: 1rem;
+}
+
+.recursos a {
+  color: #FFECE9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.recursos a:hover {
+  background-color: #4A3B31;
+}
+main {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.search-box {
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  width: 180px;
 }
