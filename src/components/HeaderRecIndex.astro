@@ -1,0 +1,9 @@
+---
+const { href = "../#" } = Astro.props;
+---
+
+<a class="btn-href" href={href}>
+        <span class="text">
+                <slot />
+        </span>
+</a>
