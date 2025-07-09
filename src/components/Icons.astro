@@ -1,0 +1,64 @@
+---
+const { icon } = Astro.props;
+---
+
+<!-- React Icon -->
+{icon === 'React' && (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <circle cx="12" cy="12" r="2.5" fill="#61DAFB" />
+    <g stroke="#61DAFB" stroke-width="1.5">
+      <ellipse rx="10" ry="4.5" transform="matrix(.866 .5 -.866 .5 12 12)" />
+      <ellipse rx="10" ry="4.5" transform="matrix(-.866 .5 .866 .5 12 12)" />
+      <ellipse rx="10" ry="4.5" transform="matrix(0 1 1 0 12 12)" />
+    </g>
+  </svg>
+)}
+
+<!-- Astro Icon -->
+
+{icon === 'Astro' && (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12 2L19.09 21.5H4.91L12 2Z" fill="#FF5D01" />
+    <circle cx="12" cy="17" r="2" fill="#fff" />
+  </svg>
+)}
+
+
+
+<!-- Node.js Icon -->
+
+{icon === 'Node' && (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M12 2L22 7v10l-10 5-10-5V7l10-5z" fill="#8CC84B" />
+    <text x="7" y="17" font-size="7" fill="#fff">Node</text>
+  </svg>
+)}
+
+
+
+<!-- JavaScript Icon -->
+
+{icon === 'Js' && (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="#F7DF1E">
+    <rect width="24" height="24" rx="4" />
+    <text x="4" y="18" font-size="10" fill="#222">JS</text>
+  </svg>
+)}
+
+<!-- Arrow Icon -->
+{icon === 'Arrow' && (
+        <svg
+            id="arrow-horizontal"
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="10"
+            viewBox="0 0 46 16"
+        >
+            <path
+            id="Path_10"
+            data-name="Path 10"
+            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+            transform="translate(30)"
+            ></path>
+        </svg>
+)}
