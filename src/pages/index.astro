@@ -4,12 +4,24 @@ import Layout from "../layouts/LayoutIndex.astro"
 ---
 
 <Layout title='dsad'>
-	<section class="hero">
-		<h1>RecurStack</h1>
-		<p>Welcome to RecurStack, your go-to solution for managing recurring tasks and projects.</p>
-		<p>Stay tuned for more updates!</p>
-	</section>
-    <section class="technologies">
+<section class="grid grid-2">
+    <div class="autoShow">
+        <section class="banner">
+            <div class="content">
+                <h1 class="left">RecurStack</h1>
+                <div class="right">
+                    <p>Web Design</p>
+                    <p>Don't forget to subscribe to the channel to continuously
+                        <br>update interesting videos</p>
+                </div>
+                <div class="image">
+                    <img src="images/mouth.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="autoShow">
+        <section class="technologies">
         <h2>Trending Technologies</h2>
         <ul>
             <li>
@@ -34,7 +46,10 @@ import Layout from "../layouts/LayoutIndex.astro"
             </li>
         </ul>
     </section>
-	<section class="videos">
+    </div>
+
+    <div class="autoShow">
+    <section class="videos">
 		<h2>Video Tutorials</h2>
 		<ul class="video-grid">
 			<li><iframe src="https://www.youtube.com/embed/JQf8XLWU-lc" frameborder="0" allowfullscreen></iframe></li>
@@ -42,14 +57,19 @@ import Layout from "../layouts/LayoutIndex.astro"
 			<li><iframe src="https://www.youtube.com/embed/Osy0yuxuEOw" frameborder="0" allowfullscreen></iframe></li>
 		</ul>
 	</section>
-	<section class="images">
+    </div>
+
+    <div class="autoShow">
+    <section class="images">
 		<h2>Images</h2>
 		<ul class="image-grid">
 			<li><img src="/images/react.jpg" alt="React Screenshot" /></li>
 			<li><img src="/images/js.png" alt="JavaScript Screenshot" /></li>
 			<li><img src="/images/py.png" alt="Python Screenshot" /></li>
 		</ul>
-	</section>    
+	</section>
+    </div>
+</section>
+
+    
 </Layout>
-
-
