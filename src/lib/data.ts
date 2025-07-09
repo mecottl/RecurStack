@@ -12,7 +12,7 @@ export const htmlData: Card[] = [
         title: 'HTML Reference',
         author: 'HTMLReference.io',
         description: 'Guía visual e interactiva de HTML',
-        img: 'https://htmlreference.io/images/logo.png',
+        img: 'https://assets.awwwards.com/awards/external/2017/09/59c0d51d317e2.jpg',
         href: 'https://htmlreference.io/'
     },
     {
@@ -28,7 +28,7 @@ export const htmlData: Card[] = [
         title: 'Frontend Checklist',
         author: 'David Dias',
         description: 'Lista de verificación para buenas prácticas HTML',
-        img: 'https://frontendchecklist.io/img/logo.png',
+        img: 'https://frontendchecklist.io/img/logos/logo-front-end-checklist.jpg',
         href: 'https://frontendchecklist.io/'
     },
     {
@@ -36,7 +36,7 @@ export const htmlData: Card[] = [
     title: 'W3Schools HTML',
     author: 'W3Schools',
     description: 'Tutorial y referencia HTML con ejemplos interactivos',
-    img: '',
+    img: 'https://asset.brandfetch.io/idpvfx7WEN/id775MPmpA.png',
     href: 'https://www.w3schools.com/html/'
 },
 {
@@ -44,7 +44,7 @@ export const htmlData: Card[] = [
     title: 'HTML Dog',
     author: 'HTML Dog',
     description: 'Tutoriales de HTML desde nivel básico hasta avanzado',
-    img: '',
+    img: 'https://www.designveloper.com/wp-content/uploads/2022/10/2-1200x822.png',
     href: 'https://htmldog.com/guides/html/'
 },
 {
@@ -52,7 +52,7 @@ export const htmlData: Card[] = [
     title: 'FreeCodeCamp HTML',
     author: 'freeCodeCamp',
     description: 'Curso gratuito de HTML5 interactivo',
-    img: '',
+    img: 'https://vectorlogoseek.com/wp-content/uploads/2019/04/freecodecamp-vector-logo.png',
     href: 'https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5'
 },
 {
@@ -60,7 +60,7 @@ export const htmlData: Card[] = [
     title: 'HTML CheatSheet',
     author: 'OverAPI',
     description: 'Resumen visual de HTML para consultar rápidamente',
-    img: '',
+    img: 'https://i.postimg.cc/tRNbG1Rk/HTML-CSS-Cheat-Sheet.png',
     href: 'https://overapi.com/html'
 },
 {
@@ -68,25 +68,10 @@ export const htmlData: Card[] = [
     title: 'CodePen Challenges',
     author: 'CodePen',
     description: 'Retos semanales para practicar HTML y CSS',
-    img: '',
+    img: 'https://logowik.com/content/uploads/images/codepen4547.logowik.com.webp',
     href: 'https://codepen.io/challenges'
 },
-{
-    id: '9',
-    title: 'HTML5 Doctor',
-    author: 'HTML5Doctor.com',
-    description: 'Artículos y guías sobre elementos semánticos de HTML5',
-    img: '',
-    href: 'http://html5doctor.com/'
-},
-{
-    id: '10',
-    title: 'MarkSheet',
-    author: 'MarkSheet.io',
-    description: 'Curso gratuito para aprender HTML y CSS desde cero',
-    img: '',
-    href: 'https://marksheet.io/'
-}
+
 
 ]
 
@@ -173,15 +158,15 @@ export const gitData: Card[] = [
 }
 
 ]
-
 export const cssData: Card[]=[
+
     
     {
         id: '1',
         title: 'UI VERSE',
         author: 'Community',
         description: 'Diseños css de componentes',
-        img: 'https://uiverse.io/assets/logo-png-BXFOQKfc.png',
+        img: 'https://tse2.mm.bing.net/th/id/OIP.ukqO-RMimtJEy6C84SzEAgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://uiverse.io/'
     },
 
@@ -198,7 +183,7 @@ export const cssData: Card[]=[
     title: 'Animista',
     author: 'Ana Travas',
     description: 'Colección de animaciones CSS listas para usar',
-    img: 'https://animista.net/share/animista-logo.png',
+    img: 'https://www.sliderrevolution.com/wp-content/uploads/2023/08/Animista.jpg',
     href: 'https://animista.net/'
 },
 {
