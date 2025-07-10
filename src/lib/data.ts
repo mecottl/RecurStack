@@ -353,7 +353,7 @@ export const jsData: Card[]=[
         title: 'Aprende JavaScript',
         author: 'Midu Dev',
         description: 'Curso progresivo e interactivo para JavaScript',
-        img: 'https://framerusercontent.com/images/nVPiOvGRZLelvCszYHI7BIBhCgc.png?scale-down-to=512 512w,https://framerusercontent.com/images/nVPiOvGRZLelvCszYHI7BIBhCgc.png?scale-down-to=1024 1024w,https://framerusercontent.com/images/nVPiOvGRZLelvCszYHI7BIBhCgc.p',
+        img: 'https://midu.dev/courses/ultimas-novedades-javascript.webp',
         href: 'https://www.aprendejavascript.dev/?code=014ba690-ff0c-442d-89b2-e98b7832f6d7'
     },
     {
@@ -361,7 +361,7 @@ export const jsData: Card[]=[
     title: 'JavaScript.info',
     author: 'Ilya Kantor',
     description: 'Documentación y tutorial de JS moderno',
-    img: 'https://javascript.info/img/favicon/apple-touch-icon.png',
+    img: 'https://es.javascript.info/img/site_preview_en_512x512.png',
     href: 'https://javascript.info/'
 },
 {
@@ -369,7 +369,7 @@ export const jsData: Card[]=[
     title: '30 Seconds of Code',
     author: 'Community',
     description: 'Snippets útiles de JavaScript y más',
-    img: 'https://www.30secondsofcode.org/icons/icon-96x96.png',
+    img: 'https://repository-images.githubusercontent.com/112507086/c8627fc7-87fb-40a3-9548-5955abfdac96',
     href: 'https://www.30secondsofcode.org'
 },
 {
@@ -377,7 +377,7 @@ export const jsData: Card[]=[
     title: 'Codewars',
     author: 'Community',
     description: 'Plataforma de desafíos para practicar JS y más',
-    img: '',
+    img: 'https://miro.medium.com/v2/resize:fit:1200/1*MBnlYS10H9B02GvAKJ-XFw.png',
     href: 'https://www.codewars.com/'
 },
 {
@@ -385,7 +385,7 @@ export const jsData: Card[]=[
     title: 'JavaScript 30',
     author: 'Wes Bos',
     description: '30 proyectos para practicar JavaScript puro',
-    img: '',
+    img: 'https://wptavern.com/wp-content/uploads/2017/01/javascript30.png',
     href: 'https://javascript30.com/'
 },
 {
@@ -393,7 +393,7 @@ export const jsData: Card[]=[
     title: 'JSFiddle',
     author: 'JSFiddle',
     description: 'Entorno online para probar y compartir código JS',
-    img: '',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmKag7J1zevsAEddLhG_umubTobPnJNdDVrg&s',
     href: 'https://jsfiddle.net/'
 },
 {
@@ -401,7 +401,7 @@ export const jsData: Card[]=[
     title: 'CodePen',
     author: 'CodePen',
     description: 'Editor y comunidad para practicar HTML, CSS y JS',
-    img: '',
+    img: 'https://niixer.com/wp-content/uploads/2023/09/Codepen.webp',
     href: 'https://codepen.io/'
 },
 {
@@ -409,7 +409,7 @@ export const jsData: Card[]=[
     title: 'LeetCode',
     author: 'LeetCode Inc.',
     description: 'Problemas de algoritmos para entrevistas técnicas',
-    img: '',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFXxTsSVEjBo2YK3MKxHo2EwGy5tWY0bzzgA&s',
     href: 'https://leetcode.com/'
 },
 {
@@ -417,7 +417,7 @@ export const jsData: Card[]=[
     title: 'Eloquent JavaScript',
     author: 'Marijn Haverbeke',
     description: 'Libro interactivo gratuito de JavaScript moderno',
-    img: '',
+    img: 'https://eloquentjavascript.net/img/cover.jpg',
     href: 'https://eloquentjavascript.net/'
 },
 {
@@ -425,7 +425,7 @@ export const jsData: Card[]=[
     title: 'RegexOne',
     author: 'Community',
     description: 'Practica expresiones regulares con ejercicios de JS',
-    img: '',
+    img: 'https://substackcdn.com/image/fetch/$s_!yQ1g!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe3940870-fc95-4dec-8fd6-9b55d46f8cd7_350x200.png',
     href: 'https://regexone.com/'
 }
 
