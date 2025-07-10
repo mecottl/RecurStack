@@ -1,14 +1,16 @@
 ---
-import Layout from '../../layouts/Layout.astro'
-import {cssData} from '../../lib/data'
-import InfoCards from '../../components/InfoCard.astro'
 import '../../styles/pages.css'
+import Layout from '../../layouts/Layout.astro'
+import InfoCards from '../../components/InfoCard.astro'
+import type { Card } from '../../lib/data';
+const res = await fetch('http://localhost:4321/api/css')
+const data = await res.json() as Card[];
 ---
-<Layout title='CSS'>
-    <div class="cards">
-        
-        {
-            cssData.map(card => <InfoCards card = {card}/>)
-        }
-    </div>
-</Layout> 
+
+<Layout title="CSS">
+  <div class="cards">
+    {
+      data.map(card => <InfoCards card={card} />)
+    }
+  </div>
+</Layout>

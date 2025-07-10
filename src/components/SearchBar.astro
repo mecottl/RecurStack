@@ -1,0 +1,116 @@
+---
+import "../styles/searchBar.css";
+---
+
+<!--
+  Componente: SearchBar
+  Descripción: Añade una barra de búsqueda con icono SVG, filtra en tiempo real
+  y resalta coincidencias en título, descripción y autor de cada tarjeta.
+-->
+<div class="search-bar group">
+  <!-- Icono de búsqueda -->
+  <img src="/images/search.svg" alt="Buscar" class="search-icon" />
+  <!-- Campo de búsqueda estático -->
+  <input
+    id="query"
+    name="searchbar"
+    type="search"
+    class="search-bar__input input"
+    placeholder="Buscar..."
+  />
+</div>
+
+<script>
+  /**
+   * Inicializa el buscador con filtrado y resaltado.
+   * Aplica a tarjetas generadas por InfoCard.astro.
+   */
+  function initSearchBar() {
+    const container = document.querySelector(".cards");
+    if (!container) return;
+
+    // Recopilamos cada tarjeta y guardamos referencias y HTML original
+    const cards = Array.from(container.children).map((child) => {
+      const item = child instanceof HTMLElement ? child : null;
+      const titleEl = item?.querySelector(".card-text h4");
+      const authorEl = item?.querySelector(".card-text span");
+      const descEl = item?.querySelector(".card-text p");
+      return {
+        item,
+        titleEl,
+        authorEl,
+        descEl,
+        origtitle: titleEl?.innerHTML ?? "",
+        origAuthor: authorEl?.innerHTML ?? "",
+        origDesc: descEl?.innerHTML ?? "",
+      };
+    });
+
+    const input = document.getElementById("query");
+    if (!(input instanceof HTMLInputElement)) return;
+
+    input.addEventListener("input", () => {
+      const raw = input.value.trim();
+      const lowerQ = raw.toLowerCase();
+      // Escape caracteres especiales para regex
+      const escaped = raw.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&");
+      const regex = new RegExp(`(${escaped})`, "gi");
+
+      cards.forEach(
+        ({
+          item,
+          titleEl,
+          authorEl,
+          descEl,
+          origtitle,
+          origAuthor,
+          origDesc,
+        }) => {
+          if (!item) return;
+          // Comprueba coincidencias en cada campo
+          const intitle = titleEl
+            ? (titleEl.textContent ?? "").toLowerCase().includes(lowerQ)
+            : false;
+          const inAuthor = authorEl
+            ? (authorEl.textContent ?? "").toLowerCase().includes(lowerQ)
+            : false;
+          const inDesc = descEl
+            ? (descEl.textContent ?? "").toLowerCase().includes(lowerQ)
+            : false;
+
+          if (!lowerQ) {
+            // Restaurar HTML original si query vacía
+            item.style.display = "";
+            if (titleEl) titleEl.innerHTML = origtitle;
+            if (authorEl) authorEl.innerHTML = origAuthor;
+            if (descEl) descEl.innerHTML = origDesc;
+          } else if (intitle || inAuthor || inDesc) {
+            // Mostrar y resaltar coincidencias
+            item.style.display = "";
+            if (titleEl)
+              titleEl.innerHTML = origtitle.replace(
+                regex,
+                '<span class="highlight-title">$1</span>',
+              );
+            if (authorEl)
+              authorEl.innerHTML = origAuthor.replace(
+                regex,
+                '<span class="highlight-author">$1</span>',
+              );
+            if (descEl)
+              descEl.innerHTML = origDesc.replace(
+                regex,
+                '<span class="highlight-description">$1</span>',
+              );
+          } else {
+            // Ocultar tarjeta sin coincidencias
+            item.style.display = "none";
+          }
+        },
+      );
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", initSearchBar);
+  document.addEventListener("astro:page-load", initSearchBar);
+</script>

@@ -7,9 +7,9 @@ interface Props {
 }
 
 const { card } = Astro.props;
-const { title, author, description, img, href } = card;
+const {title, author, description, img, href } = card;
 ---
-<a href={href} class="card-container" target="_blank" rel="noopener noferrer">
+<a href={href} class="card-container" target="_blank" rel="noopener noferrer" data-id={card.id}>
   <picture>
     <img src={img} alt={title} loading="lazy" />
   </picture>

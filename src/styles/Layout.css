@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Fira Code';
+  font-family: 'Fira Code', system-ui, -apple-system, sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--bg);
@@ -24,7 +24,7 @@ body {
 }
 
 .nav-container {
-  font-family: 'Work Sans';
+  font-family: 'Work Sans', system-ui, -apple-system, sans-serif;
   width: 220px;
   min-width: 200px;
   height: 100vh;
