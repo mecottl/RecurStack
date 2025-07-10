@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/Layout.astro'
+import {apisData} from '../../lib/data'
+import InfoCards from '../../components/InfoCard.astro'
+import '../../styles/pages.css'
+---
+<Layout title='APIS'>
+    <div class="cards">
+        
+        {
+            apisData.map(card => <InfoCards card = {card}/>)
+        }
+    </div>
+</Layout> 
