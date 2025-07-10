@@ -2,6 +2,9 @@
   --color-bg: #1A1A1A;
   --color-text: #D7C9C1;
   --color-card: #2B2B2B;
+  --main-color: #000;
+  --submain-color: #78858F;
+  --bg-color: #fff;
 }
 * {
   margin: 0;
@@ -43,10 +46,6 @@ section {
 }
 
 /* tech */
-.technologies h2 {
-  text-align: center;
-  color: var(--color-text);
-}
 .technologies ul {
   display: flex;
   flex-wrap: wrap;
@@ -57,15 +56,6 @@ section {
   width: min(1400px, 100vw);
   margin: auto;
   padding: 100px 20px;
-}
-
-.technologies li {
-  background-color: #4A3B31;
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  font-weight: bold;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
-  color: var(--color-text);
 }
 
 /* Videos */
@@ -137,7 +127,14 @@ section {
   justify-content: center;
 }
 
-
+h1{
+     font-family: "Odibee Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10em; 
+}
 .banner .content{
     font-family: "Odibee Sans", sans-serif;
     display: flex;
@@ -346,3 +343,299 @@ main {
   transform-origin: bottom left;
 }
 
+.card {
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  width: 300px;
+  min-height: 384px; /* Cambiado a min-height para contenido dinámico */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Para que los bordes redondeados se apliquen correctamente */
+}
+
+.card__img {
+  height: 160px; /* Reducido un poco para mejor proporción */
+  width: 100%;
+  overflow: hidden;
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card__avatar {
+  position: absolute;
+  top: 100px; /* Ajustado para mejor posicionamiento */
+  width: 100px; /* Reducido un poco para mejor proporción */
+  height: 100px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--main-color);
+  z-index: 1;
+}
+
+.card__avatar img {
+  width: 92px; /* Ajustado al nuevo tamaño del avatar */
+  height: 92px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card__title {
+  margin-top: 60px; /* Ajustado al nuevo tamaño del avatar */
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--main-color);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.card__subtitle {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--submain-color);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.card__github {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.card__github a svg {
+  width: 32px; /* Reducido un poco para mejor proporción */
+  height: 32px;
+  color: var(--main-color);
+  transition: transform 0.2s ease;
+}
+
+.card__github a:hover svg {
+  transform: scale(1.1);
+  color: #f85565;
+}
+
+.card__email {
+  margin-top: 16px;
+  padding: 0 20px 20px;
+  font-size: 13px;
+  color: var(--submain-color);
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card__email a {
+  text-decoration: none;
+  color: inherit;
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 20px; /* Más redondeado */
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.card__email a:hover {
+  background: var(--main-color);
+  color: var(--bg-color);
+  transform: translateY(-2px);
+}
+/* From Uiverse.io by 0xnihilism */ 
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Common styles for both buttons */
+.brutalist-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 142px;
+  height: 142px;
+  color: #e5dede;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Styles for the first button */
+.button-1 {
+  background-color: #063525;
+  border: 3px solid #42c498;
+  border-radius: 12px;
+  box-shadow: 4px 4px 1px #000000;
+}
+
+.button-1:hover {
+  background-color: #1a5c46;
+  border-color: #030504;
+  transform: translate(-6px, -6px) rotate(1deg);
+  box-shadow: 10px 10px 0 #000000, 15px 15px 20px rgba(64, 164, 122, 0.2);
+}
+
+.button-1::before,
+.button-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.button-1::before {
+  left: -100%;
+}
+.button-1::after {
+  left: 100%;
+}
+
+.button-1:hover::before {
+  animation: swipeRight 1.5s infinite;
+}
+.button-1:hover::after {
+  animation: swipeLeft 1.5s infinite;
+}
+
+@keyframes swipeRight {
+  100% {
+    transform: translateX(200%) skew(-45deg);
+  }
+}
+
+@keyframes swipeLeft {
+  100% {
+    transform: translateX(-200%) skew(-45deg);
+  }
+}
+
+/* Hover effects */
+.brutalist-button:hover .openai-logo {
+  transform: translateY(-10px);
+}
+
+.brutalist-button:hover .openai-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.bruta.brutalist-button:hover .openai-text {
+  opacity: 1;
+  max-height: 60px;
+  margin-top: 8px;
+}
+
+/* Styles for the OpenAI logo and text */
+.openai-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 3;
+}
+
+.animation {
+  width: 64px;
+  height: 64px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.openai-text {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+  text-align: center;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 3;
+}
+
+.button-text span:first-child {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.button-text span:last-child {
+  font-size: 16px;
+}
+
+/* Hover effects */
+.brutalist-button:hover .animation {
+  transform: translateY(-10px);
+}
+
+.brutalist-button:hover .animation {
+  width: 40px;
+  height: 40px;
+}
+
+.brutalist-button:hover .button-text,
+.brutalist-button:hover .openai-text {
+  opacity: 1;
+  max-height: 60px;
+  margin-top: 8px;
+}
+
+/* Animation for the OpenAI logo */
+@keyframes spin-and-zoom {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.brutalist-button:hover .animation {
+  animation: spin-and-zoom 4s cubic-bezier(0.25, 0.8, 0.25, 1) infinite;
+}
+
+.brutalist-button:hover .openai-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.brutalist-button:active .animation,
+.brutalist-button:active .openai-text,
+.brutalist-button:active .button-text {
+  transform: scale(0.95);
+}

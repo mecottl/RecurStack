@@ -4,7 +4,13 @@ const { icon } = Astro.props;
 
 <!-- React Icon -->
 {icon === 'React' && (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <svg 
+  width="24" 
+  class="animation" 
+  height="24" 
+  viewBox="0 0 24 24" 
+  fill="none">
+
     <circle cx="12" cy="12" r="2.5" fill="#61DAFB" />
     <g stroke="#61DAFB" stroke-width="1.5">
       <ellipse rx="10" ry="4.5" transform="matrix(.866 .5 -.866 .5 12 12)" />
@@ -17,33 +23,62 @@ const { icon } = Astro.props;
 <!-- Astro Icon -->
 
 {icon === 'Astro' && (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <svg 
+  class="animation"
+  width="24" height="24" viewBox="0 0 24 24" fill="none">
     <path d="M12 2L19.09 21.5H4.91L12 2Z" fill="#FF5D01" />
     <circle cx="12" cy="17" r="2" fill="#fff" />
   </svg>
 )}
 
-
-
 <!-- Node.js Icon -->
 
 {icon === 'Node' && (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <svg class="animation" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <path d="M12 2L22 7v10l-10 5-10-5V7l10-5z" fill="#8CC84B" />
     <text x="7" y="17" font-size="7" fill="#fff">Node</text>
   </svg>
 )}
 
-
-
 <!-- JavaScript Icon -->
 
 {icon === 'Js' && (
-  <svg width="24" height="24" viewBox="0 0 24 24" fill="#F7DF1E">
+  <svg class="animation" width="24" height="24" viewBox="0 0 24 24" fill="#F7DF1E">
     <rect width="24" height="24" rx="4" />
     <text x="4" y="18" font-size="10" fill="#222">JS</text>
   </svg>
 )}
+
+<!-- OpenAI Icon -->
+{icon === 'OpenAI' && (
+    <svg
+    class="animation"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+    <path
+    d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.8956zm16.0993 3.8558L12.5907 8.3829 14.6108 7.2144a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.3927-.6813zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"
+    fill="#10A37F"
+    ></path>
+    </svg>
+)}
+
+<!-- HTML Icon -->
+{icon === 'HTML' &&(
+  <svg class="animation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="40" height="40">
+  <path fill="#E34F26" d="M71 460L30 0h451l-41 460-185 52"/>
+  <path fill="#EF652A" d="M256 472l149-41 35-394H256"/>
+  <path fill="#EBEBEB" d="M256 208h-75l-5-58h80V94H142l1 15 14 156h99v-57zm0 147l-63-17-4-45h-56l7 89 116 32h1v-59z"/>
+  <path fill="#FFF" d="M255 208v57h74l-7 73-67 17v59l116-32 1-11 13-141 2-15h-16zm0-114v56h137l1-12 3-29 1-15z"/>
+</svg>
+)}
+
+
+
+
+
+
+
 
 <!-- Arrow Icon -->
 {icon === 'Arrow' && (
@@ -61,4 +96,59 @@ const { icon } = Astro.props;
             transform="translate(30)"
             ></path>
         </svg>
+)}
+
+<!-- GitHub -->
+
+{icon === 'GitHub' && (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    style="color: #111111; transition: transform 0.2s ease;"
+    onmouseover="this.style.transform='scale(1.1)'"
+    onmouseout="this.style.transform='scale(1)'"
+  >
+    <path
+      d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.55 0-.27-.01-1.16-.01-2.1-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.73.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.77 2.74 1.26 3.41.96.1-.76.41-1.26.75-1.55-2.56-.29-5.26-1.28-5.26-5.69 0-1.26.45-2.3 1.2-3.11-.12-.29-.52-1.45.12-3.02 0 0 .97-.31 3.19 1.18a11.2 11.2 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.22-1.5 3.19-1.18 3.19-1.18.64 1.57.24 2.73.12 3.02.75.81 1.2 1.85 1.2 3.11 0 4.42-2.7 5.39-5.28 5.67.42.36.8 1.07.8 2.17 0 1.57-.01 2.83-.01 3.21 0 .3.21.66.8.55A10.5 10.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"
+    />
+  </svg>
+)}
+
+<!-- Email Icon -->
+{icon === 'Email' && (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#000"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M22 12l-10 6-10-6V6l10 6 10-6v6z" />
+    <path d="M2 12l10 6 10-6" />
+  </svg>
+)}
+<!--Instragram Icon -->
+{icon === 'Instagram' && (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#000"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <rect x="2" y="2" width="20" height="20"  rx="5" ry="5" />
+    <circle cx="12" cy="12" r="3" />
+    <line x1="16.5" y1="7.5" x2="16.5" y2="7.5" />
+  </svg>
 )}
