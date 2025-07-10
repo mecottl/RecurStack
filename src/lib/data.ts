@@ -260,7 +260,7 @@ export const sqlData: Card[]=[
         title: 'ChartDB',
         author: '',
         description: 'Creadora de diagramas de bases de datos',
-        img: 'https://framerusercontent.com/images/nVPiOvGRZLelvCszYHI7BIBhCgc.png?scale-down-to=512',
+        img: 'https://repository-images.githubusercontent.com/838212912/3063460a-4c7c-4b4d-aea5-1e9760aa7a37',
         href: 'https://chartdb.io/'
     
     },
@@ -269,7 +269,7 @@ export const sqlData: Card[]=[
     title: 'SQLBolt',
     author: 'SQLBolt',
     description: 'Aprende SQL con lecciones interactivas',
-    img: 'https://www.sqlbolt.com/img/logo.png',
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNrzFDBFrnO44tIUxYbR01AiO0ZnVV7WawA&s',
     href: 'https://sqlbolt.com/'
 },
 {
@@ -277,7 +277,7 @@ export const sqlData: Card[]=[
     title: 'DBDiagram.io',
     author: 'Holistics',
     description: 'Crea diagramas ER visualmente',
-    img: 'https://dbdiagram.io/images/logo.png',
+    img: 'https://community.dbdiagram.io/uploads/default/original/1X/79d41edfc6a7fb2c1ec85192747c23d765698509.png',
     href: 'https://dbdiagram.io/'
 },
 {
@@ -285,7 +285,7 @@ export const sqlData: Card[]=[
     title: 'Mode SQL Tutorial',
     author: 'Mode Analytics',
     description: 'Curso interactivo de SQL con datasets reales',
-    img: '',
+    img: 'https://www.veeble.org/blog/wp-content/uploads/2023/12/Mode.png',
     href: 'https://mode.com/sql-tutorial/'
 },
 {
@@ -293,7 +293,7 @@ export const sqlData: Card[]=[
     title: 'SQLZoo',
     author: 'SQLZoo',
     description: 'Tutorial y ejercicios interactivos para SQL',
-    img: '',
+    img: 'https://sqlzoo.net/static/malones.svg',
     href: 'https://sqlzoo.net/'
 },
 {
@@ -301,7 +301,7 @@ export const sqlData: Card[]=[
     title: 'W3Schools SQL',
     author: 'W3Schools',
     description: 'Tutorial interactivo de SQL para principiantes',
-    img: '',
+    img: 'https://diveintodigitalmarketing.com/wp-content/uploads/2024/09/w3schools-logo.png',
     href: 'https://www.w3schools.com/sql/'
 },
 {
@@ -309,7 +309,7 @@ export const sqlData: Card[]=[
     title: 'LeetCode SQL',
     author: 'LeetCode',
     description: 'Problemas de SQL para entrevistas técnicas',
-    img: '',
+    img: 'https://repository-images.githubusercontent.com/597198795/b64f4fe8-f839-47ba-af83-9f15fa6c19e7',
     href: 'https://leetcode.com/problemset/database/'
 },
 {
@@ -317,7 +317,7 @@ export const sqlData: Card[]=[
     title: 'StrataScratch',
     author: 'StrataScratch',
     description: 'Ejercicios de SQL con datasets reales',
-    img: '',
+    img: 'https://avatars.githubusercontent.com/u/36822423?s=200&v=4',
     href: 'https://www.stratascratch.com/'
 },
 {
@@ -325,7 +325,7 @@ export const sqlData: Card[]=[
     title: 'Hackerrank SQL',
     author: 'Hackerrank',
     description: 'Práctica y desafíos SQL con rankings',
-    img: '',
+    img: 'https://cdn.prod.website-files.com/6613f45ec198bd785f4443d1/668832c41801ae5d22a45a1e_hackerrank-software.png',
     href: 'https://www.hackerrank.com/domains/sql'
 }
 

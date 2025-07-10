@@ -14,7 +14,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg);
-  display: flex;
+  background-image: url('/bg2.svg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;  display: flex;
   min-height: 100vh;
 }
 
@@ -23,7 +26,6 @@ body {
   min-width: 200px;
   height: 100vh;
   box-sizing: border-box;
-  /* Fondo transparente, puedes ajustar el alfa */
   background-color: transparent; 
   padding: 0 10px 0;
   overflow-y: auto;
@@ -38,13 +40,13 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 1px;      /* grosor del "borde" */
-  height: 100%;    /* todo el alto del contenedor */
+  width: 1px;    
+  height: 100%;   
   pointer-events: none;
   background: linear-gradient(
     to bottom,
     transparent 10%,
-    var(--text-secundary) 50%,  /* centro opaco */
+    var(--text-secundary) 50%,
     transparent 90%
   );
 }
@@ -96,7 +98,7 @@ body {
   border-right: 6px solid var(--color-medio);
   overflow: hidden;
   line-height: 2rem;
-  transition: width .6s ease, color .6s ease;
+  transition: width .3s ease, color .3s ease;
   transition-delay: 0.3s;
 }
 
