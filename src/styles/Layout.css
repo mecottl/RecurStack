@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --bg: #121212;
   --bg-secundary: #1e1e1e;
@@ -10,7 +12,7 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Fira Code';
   margin: 0;
   padding: 0;
   background-color: var(--bg);
@@ -22,6 +24,7 @@ body {
 }
 
 .nav-container {
+  font-family: 'Work Sans';
   width: 220px;
   min-width: 200px;
   height: 100vh;
@@ -99,7 +102,7 @@ body {
   overflow: hidden;
   line-height: 2rem;
   transition: width .3s ease, color .3s ease;
-  transition-delay: 0.3s;
+  transition-delay: 0s;
 }
 
 .btn-href:hover {
@@ -109,7 +112,7 @@ body {
 .btn-href:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 20px var(--color-claro));
-  transition-delay: 0.3s; 
+  transition-delay: 0; 
 }
 
 .btn-href:not(:hover) .hover-text {
