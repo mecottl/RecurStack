@@ -1,0 +1,49 @@
+---
+import Icons  from '../components/Icons.astro';
+interface Props {
+  Name: string;
+  Avatar: string;
+  Background: string;
+  Email?: string;
+  GitHub?: string;
+  Instagram?: string;
+}
+const { Name, Avatar, Background, Email, GitHub, Instagram } = Astro.props;
+---
+
+<div class="card">
+  <div class="card__img">
+    <img src={Background} alt="Fondo" />
+  </div>
+
+  <div class="card__avatar">
+    <img src={Avatar} alt="Avatar" />
+  </div>
+
+  <div class="card__title">{Name}</div>
+  <div class="card__subtitle">Web Development</div>
+
+  <!-- Icono de GitHub -->
+  {GitHub && (
+    <div class="card__github">
+      <a href={GitHub} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <Icons icon="GitHub" />
+      </a>
+    </div>
+  )}
+
+    {Instagram && (
+    <div class="card__instagram">
+      <a href={Instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <Icons icon="Instagram" />
+      </a>
+    </div>
+  )}
+
+  <!-- Correo electrónico -->
+  {Email && (
+    <div class="card__email">
+      <a href={`mailto:${Email}`}> <Icons icon="Email"/>{Email}</a>
+    </div>
+  )}
+</div>

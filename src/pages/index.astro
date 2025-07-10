@@ -2,6 +2,7 @@
 import '../styles/index.css';
 import Layout from "../layouts/LayoutIndex.astro"
 import Icons from '../components/Icons.astro';
+import Aboutme from '../components/Aboutme.astro';
 ---
 
 <Layout title='RecurStack'>
@@ -23,23 +24,116 @@ import Icons from '../components/Icons.astro';
     </div>
     <div class="autoShow">
         <section class="technologies">
-        <h2>Trending Technologies</h2>
+        <h1>Trending Technologies</h1>
         <ul>
             <li>
-                <Icons icon="React"/>
-                React
+                <!-- From Uiverse.io by 0xnihilism --> 
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="HTML" />
+                    </div>
+                    <div class="button-text">
+                    <span>HTML</span>
+                    </div>
+                </button>
+                </div>
             </li>
             <li>
-                <Icons icon="Astro"/>
-                Astro
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="React" />
+                    </div>
+                    <div class="button-text">
+                    <span>CSS</span>
+                    </div>
+                </button>
+                </div>
             </li>
             <li>
-                <Icons icon="Node"/>
-                Node.js
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="Js" />
+                    </div>
+                    <div class="button-text">
+                    <span>JavaScript</span>
+                    </div>
+                </button>
+                </div>
             </li>
             <li>
-                <Icons icon="Js"/>
-                JavaScript
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="Astro" />
+                    </div>
+                    <div class="button-text">
+                    <span>React</span>
+                    </div>
+                </button>
+                </div>
+            </li>
+            <li>
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="Node" />
+                    </div>
+                    <div class="button-text">
+                    <span>Node</span>
+                    </div>
+                </button>
+                </div>
+            </li>
+            <li>
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="React" />
+                    </div>
+                    <div class="button-text">
+                    <span>Astro</span>
+                    </div>
+                </button>
+                </div>
+            </li>
+            <li>
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="Js" />
+                    </div>
+                    <div class="button-text">
+                    <span>GIT</span>
+                    </div>
+                </button>
+                </div>
+            </li>
+            <li>
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="Astro" />
+                    </div>
+                    <div class="button-text">
+                    <span>NPM</span>
+                    </div>
+                </button>
+                </div>
+            </li>
+            <li>
+                <div class="button-container">
+                <button class="brutalist-button openai button-1">
+                    <div class="openai-logo">
+                        <Icons icon="Node" />
+                    </div>
+                    <div class="button-text">
+                    <span>SQL</span>
+                    </div>
+                </button>
+                </div>
             </li>
         </ul>
     </section>
@@ -47,7 +141,7 @@ import Icons from '../components/Icons.astro';
 
     <div class="autoShow">
     <section class="videos">
-		<h2>Video Tutorials</h2>
+		<h1>Video Tutorials</h1>
 		<ul class="video-grid">
 			<li><iframe src="https://www.youtube.com/embed/JQf8XLWU-lc" title="Video1" frameborder="0" allowfullscreen></iframe></li>
 			<li><iframe src="https://www.youtube.com/embed/MmfoLqiu1A0" title="video2" frameborder="0" allowfullscreen></iframe></li>
@@ -64,7 +158,7 @@ import Icons from '../components/Icons.astro';
 
     <div class="autoShow">
     <section class="images">
-		<h2>Images</h2>
+		<h1>Images</h1>
 		<ul class="image-grid">
 			<li><img src="/images/react.jpg" alt="React Screenshot" /></li>
 			<li><img src="/images/js.png" alt="JavaScript Screenshot" /></li>
@@ -75,6 +169,32 @@ import Icons from '../components/Icons.astro';
             <Icons icon="Arrow" />
         </button>
 	</section>
+    </div>
+    <div class="autoShow">
+        <section class="banner">
+            <div class="content">
+                <h1>About Us</h1>
+                <div class="right">
+                    <p>We are a team of passionate developers dedicated to sharing knowledge and tools for web development.</p>
+                    <p>Join us in our journey to explore the latest technologies and trends in the industry.</p>
+                <Aboutme
+                Name="Moises Casanova"
+                Avatar="/images/Moi.jpg"
+                Background="/images/Fondo.png"
+                Email='moicasanova@correo.com'
+                GitHub='https://github.com/M0I0-0'
+                Instagram='https://www.instagram.com/moi_casanova/'
+                />
+                <Aboutme
+                Name="Gerardo Mecott"
+                Avatar="/images/Mecott.jpg"
+                Background="/images/Fondo.png"
+                Email='mecott@correo.com'
+                GitHub='https://github.com/mecottl'
+                Instagram='https://www.instagram.com/mecottl/'
+                />
+            </div>
+        </section>
     </div>
 </section>
 </Layout>
