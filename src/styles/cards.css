@@ -89,6 +89,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  flex: 1 1 auto;
 }
 
 .card-text h4 {

@@ -1,0 +1,88 @@
+
+
+| Title                   | Tags                         |
+| ----------------------- | ---------------------------- |
+| UI VERSE                | `components`, `designs`      |
+| Bento Grids             | `templates`, `layout`        |
+| Animista                | `animations`, `css`          |
+| Neumorphism.io          | `generator`, `neumorphism`   |
+| Glassmorphism Generator | `generator`, `glassmorphism` |
+| Color Space             | `palette`, `colors`          |
+| Flexbox Froggy          | `game`, `flexbox`            |
+| Grid Garden             | `game`, `grid`               |
+| CSSBattle               | `game`, `challenges`         |
+| CSS Tricks              | `blog`, `snippets`           |
+
+
+| Title             | Tags                      |
+| ----------------- | ------------------------- |
+| Postgres Sandbox  | `generator`, `postgres`   |
+| ChartDB           | `diagram`, `erd`          |
+| SQLBolt           | `interactive`, `learning` |
+| DBDiagram.io      | `diagram`, `visual`       |
+| Mode SQL Tutorial | `course`, `datasets`      |
+| SQLZoo            | `tutorial`, `exercises`   |
+| W3Schools SQL     | `tutorial`, `examples`    |
+| LeetCode SQL      | `problems`, `interview`   |
+| StrataScratch     | `exercises`, `datasets`   |
+| Hackerrank SQL    | `challenges`, `ranking`   |
+
+| Title               | Tags                          |
+| ------------------- | ----------------------------- |
+| Aprende JavaScript  | `course`, `interactive`       |
+| JavaScript.info     | `documentation`, `modern`     |
+| 30 Seconds of Code  | `snippets`, `quick-reference` |
+| Codewars            | `challenges`, `coding`        |
+| JavaScript 30       | `projects`, `practice`        |
+| JSFiddle            | `sandbox`, `share`            |
+| CodePen             | `editor`, `community`         |
+| LeetCode            | `problems`, `algorithms`      |
+| Eloquent JavaScript | `book`, `interactive`         |
+| RegexOne            | `regex`, `exercises`          |
+
+| Title             | Tags                            |
+| ----------------- | ------------------------------- |
+| Netlify Drop      | `hosting`, `static`             |
+| Vercel            | `deploy`, `frontend`            |
+| Surge             | `deploy`, `cli`                 |
+| Render            | `deploy`, `full-stack`          |
+| Glitch            | `prototyping`, `instant`        |
+| Fly.io            | `deploy`, `edge`                |
+| Firebase Hosting  | `hosting`, `secure`             |
+| GitHub Pages Docs | `documentation`, `github-pages` |
+
+| Title               | Tags                       |
+| ------------------- | -------------------------- |
+| Lenguaje JS         | `roadmap`, `technologies`  |
+| DevDocs             | `documentation`, `unified` |
+| MDN Web Docs        | `official`, `web`          |
+| npm                 | `documentation`, `package` |
+| W3Schools           | `tutorials`, `multi-tech`  |
+| Stack Overflow      | `community`, `qa`          |
+| TypeScript Handbook | `official`, `typescript`   |
+| Node.js Docs        | `official`, `nodejs`       |
+
+| Title           | Tags                        |
+| --------------- | --------------------------- |
+| Coolors         | `palette`, `colors`         |
+| SVG Repo        | `icons`, `svg`              |
+| Google Fonts    | `fonts`, `web`              |
+| Haikei          | `generator`, `backgrounds`  |
+| Pigment         | `palette`, `gradients`      |
+| Excalidraw      | `diagrams`, `collaborative` |
+| Dribbble        | `inspiration`, `community`  |
+| Behance         | `portfolios`, `inspiration` |
+| Figma Community | `resources`, `-ui`          |
+| Fontpair        | `typography`, `pairing`     |
+| Color Hunt      | `palette`, `trending`       |
+| UI Design Daily | `resources`, `daily`        |
+| Ray.so          | `screenshots`, `code`       |
+| codi.link       | `editor`, `realtime`        |
+| Kaboompics      | `photos`, `stock`           |
+
+| Title        | Tags                      |
+| ------------ | ------------------------- |
+| OpenRouter   | `api`, `multi-models`     |
+| Stripe API   | `payments`, `integration` |
+| RapidAPI Hub | `marketplace`, `testing`  |
+| DummyJSON    | `mock-data`, `practice`   |

@@ -1,15 +1,22 @@
 ---
+// src/components/InfoCard.astro
 import type { Card } from "../lib/data";
 import "../styles/cards.css";
-
+import "../styles/tags.css";
 interface Props {
-    card: Card;
+  card: Card;
 }
 
-const { card } = Astro.props;
-const {title, author, description, img, href } = card;
+const { card } = Astro.props as Props;
+const { title, author, description, img, href, tags } = card;
 ---
-<a href={href} class="card-container" target="_blank" rel="noopener noferrer" data-id={card.id}>
+<a
+  href={href}
+  class="card-container glass-card"
+  target="_blank"
+  rel="noopener noreferrer"
+  data-id={card.id}
+>
   <picture>
     <img src={img} alt={title} loading="lazy" />
   </picture>
@@ -18,5 +25,12 @@ const {title, author, description, img, href } = card;
     <h4>{title}</h4>
     <span>{author}</span>
     <p>{description}</p>
+
+    <!-- Aquí van las tags -->
+    <div class="tag-container">
+      {tags.map((tag) => (
+        <span class={`tag tag--${tag}`}>{tag}</span>
+      ))}
+    </div>
   </div>
 </a>
