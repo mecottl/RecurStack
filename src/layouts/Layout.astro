@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import HeaderRecurso from "../components/HeaderRecurso.astro";
 import Home from "../components/Home.astro";
 import Search from "../components/SearchBar.astro";
@@ -20,23 +20,18 @@ const { title } = Astro.props;
 			name="description"
 			content={`Recursos útiles para programadores - Categoría: ${title}`}
 		/>
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href="/logo.svg"
-			<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com"
-		/>
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
-		/></head
-	>
-	<meta name="generator" content={Astro.generator} />
-	<title>{title} | Recursos Dev</title>
-	<ViewTransitions />
+		/>
+		<title>{title} | Recursos Dev</title>
+		<meta name="generator" content={Astro.generator} /></head
+		>
+		<ClientRouter />
+	</head>
 
 	<body>
 		<aside class="nav-container">
