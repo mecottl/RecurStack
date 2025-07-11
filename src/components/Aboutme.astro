@@ -22,28 +22,30 @@ const { Name, Avatar, Background, Email, GitHub, Instagram } = Astro.props;
 
   <div class="card__title">{Name}</div>
   <div class="card__subtitle">Web Development</div>
+  <div class="card__socials">
+        <!-- Icono de GitHub -->
+    {GitHub && (
+      <div class="card__github">
+        <a href={GitHub} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <Icons icon="GitHub" />
+        </a>
+      </div>
+    )}
 
-  <!-- Icono de GitHub -->
-  {GitHub && (
-    <div class="card__github">
-      <a href={GitHub} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <Icons icon="GitHub" />
-      </a>
-    </div>
-  )}
+      {Instagram && (
+      <div class="card__instagram">
+        <a href={Instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <Icons icon="Instagram" />
+        </a>
+      </div>
+    )}
+  </div>
 
-    {Instagram && (
-    <div class="card__instagram">
-      <a href={Instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <Icons icon="Instagram" />
-      </a>
-    </div>
-  )}
 
   <!-- Correo electrónico -->
   {Email && (
     <div class="card__email">
-      <a href={`mailto:${Email}`}> <Icons icon="Email"/>{Email}</a>
+      <a href={`mailto:${Email}`}>{Email}</a>
     </div>
   )}
 </div>
