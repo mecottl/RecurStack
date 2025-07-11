@@ -763,16 +763,6 @@ main {
   transition: color 0.3s ease;
 }
 
-/* Para pantallas pequeñas (responsive) */
-/* Variables y estilos base se mantienen igual */
-
-/* ==================== */
-/* MEDIA QUERIES MEJORADAS */
-/* ==================== */
-
-/* Pantallas grandes (desktop) - se usan los estilos base */
-
-/* Tablet (768px - 1023px) */
 @media screen and (max-width: 1023px) {
   body {
     padding: 1.5rem;

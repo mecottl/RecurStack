@@ -1,0 +1,21 @@
+---
+const { id, title, thumbnail, channel, views, timestamp } = Astro.props;
+---
+
+<article class="video-card">
+  <iframe 
+    src={id}
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</article>
+
+<style>
+  .video-card {
+  flex: 1 1 320px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 236px;
+  }
+</style>
