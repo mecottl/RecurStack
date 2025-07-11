@@ -110,3 +110,10 @@
   color: var(--text-secundary);
   margin: 0;
 }
+
+
+.card_star-icon{
+  height: 40px;
+  position: absolute;
+  right: 10px;
+}

@@ -8,7 +8,7 @@ interface Props {
 }
 
 const { card } = Astro.props as Props;
-const { title, author, description, img, href, tags } = card;
+const { title, author, description, img, href, tags, isFavorite } = card;
 ---
 <a
   href={href}
@@ -16,13 +16,22 @@ const { title, author, description, img, href, tags } = card;
   target="_blank"
   rel="noopener noreferrer"
   data-id={card.id}
+  style={`order: ${isFavorite ? -1 : 0}`}
 >
+
   <picture>
     <img src={img} alt={title} loading="lazy" />
   </picture>
 
   <div class="card-text">
     <h4>{title}</h4>
+      {isFavorite && (
+    <img
+      src="/icons/star.svg"
+      alt="Recomended"
+      class="card_star-icon"
+    />
+  )}
     <span>{author}</span>
     <p>{description}</p>
 

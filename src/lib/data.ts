@@ -6,6 +6,7 @@ export interface Card {
     img: string;
     href: string;
     tags: string[];
+    isFavorite: boolean;
 
 }
 export const htmlData: Card[] = [
@@ -17,6 +18,7 @@ export const htmlData: Card[] = [
         img: 'https://assets.awwwards.com/awards/external/2017/09/59c0d51d317e2.jpg',
         href: 'https://htmlreference.io/',
         tags: ['reference', 'visual', 'interactive'],
+        isFavorite: false,
     },
     {
         id: '2',
@@ -26,6 +28,8 @@ export const htmlData: Card[] = [
         img: 'https://caniuse.com/img/favicon-128.png',
         href: 'https://caniuse.com/',
         tags: ['compatibility', 'browsers'],
+        isFavorite: true
+
     },
     {
         id: '3',
@@ -35,6 +39,8 @@ export const htmlData: Card[] = [
         img: 'https://frontendchecklist.io/img/logos/logo-front-end-checklist.jpg',
         href: 'https://frontendchecklist.io/',
         tags: ['checklist', 'best-practices'],
+        isFavorite: true
+
     },
     {
         id: '4',
@@ -44,6 +50,7 @@ export const htmlData: Card[] = [
         img: 'https://asset.brandfetch.io/idpvfx7WEN/id775MPmpA.png',
         href: 'https://www.w3schools.com/html/',
         tags: ['tutorial', 'examples'],
+        isFavorite: false
     },
     {
         id: '5',
@@ -53,6 +60,7 @@ export const htmlData: Card[] = [
         img: 'https://www.designveloper.com/wp-content/uploads/2022/10/2-1200x822.png',
         href: 'https://htmldog.com/guides/html/',
         tags: ['tutorial', 'levels'],
+        isFavorite: false
     },
     {
         id: '6',
@@ -62,6 +70,7 @@ export const htmlData: Card[] = [
         img: 'https://vectorlogoseek.com/wp-content/uploads/2019/04/freecodecamp-vector-logo.png',
         href: 'https://www.freecodecamp.org/learn/responsive-web-design/#basic-html-and-html5',
         tags: ['course', 'free'],
+        isFavorite: false
     },
     {
         id: '7',
@@ -71,6 +80,8 @@ export const htmlData: Card[] = [
         img: 'https://i.postimg.cc/tRNbG1Rk/HTML-CSS-Cheat-Sheet.png',
         href: 'https://overapi.com/html',
         tags: ['cheatsheet', 'quick-reference'],
+        isFavorite: true
+
     },
     {
         id: '8',
@@ -80,6 +91,18 @@ export const htmlData: Card[] = [
         img: 'https://logowik.com/content/uploads/images/codepen4547.logowik.com.webp',
         href: 'https://codepen.io/challenges',
         tags: ['challenges', 'practice'],
+        isFavorite: false
+    },
+    {
+        id: '9',
+        title: 'codi.link',
+        author: 'MiduDev',
+        description: 'Editor de codigo en tiempo real html, css y js',
+        img: 'https://i.ytimg.com/vi/EsE8MvxJTdA/maxresdefault.jpg',
+        href: 'https://codi.link/',
+        tags: ['editor', 'realtime'],
+        isFavorite: true
+
     },
 ];
 
@@ -92,6 +115,8 @@ export const gitData: Card[] = [
         img: 'https://ohmygit.org/assets/images/cover.png',
         href: 'https://ohmygit.org/',
         tags: ['game', 'learn'],
+        isFavorite: true
+
     },
     {
         id: '2',
@@ -101,6 +126,8 @@ export const gitData: Card[] = [
         img: 'https://devlog.cyconet.org/content/images/2013/02/learninggitbranching.png',
         href: 'https://learngitbranching.js.org/',
         tags: ['simulator', 'branches'],
+        isFavorite: true
+
     },
     {
         id: '4',
@@ -110,6 +137,8 @@ export const gitData: Card[] = [
         img: 'https://miro.medium.com/v2/resize:fit:1200/1*Z16CjNHE7dV_WVT82_GtbQ.png',
         href: 'https://lab.github.com/',
         tags: ['tutorial', 'interactive'],
+        isFavorite: true
+
     },
     {
         id: '5',
@@ -119,6 +148,8 @@ export const gitData: Card[] = [
         img: 'https://www.git-tower.com/learn/cheat-sheets/git-de/git-cheat-sheet-large01-de.png',
         href: 'https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf',
         tags: ['cheatsheet', 'quick-reference'],
+        isFavorite: true
+
     },
     {
         id: '6',
@@ -128,6 +159,8 @@ export const gitData: Card[] = [
         img: 'https://livablesoftware.com/wp-content/uploads/2020/02/visualmerge-1080x588.png',
         href: 'https://git-school.github.io/visualizing-git/',
         tags: ['visual', 'commands'],
+        isFavorite: false
+
     },
     {
         id: '7',
@@ -137,6 +170,8 @@ export const gitData: Card[] = [
         img: 'https://th.bing.com/th/id/R.e867a319aeb1a9b3e7f94adcd2579f5c?rik=O4gpCjFN57511g&pid=ImgRaw&r=0',
         href: 'https://ohshitgit.com/',
         tags: ['tips', 'errors'],
+        isFavorite: false
+
     },
     {
         id: '9',
@@ -146,6 +181,8 @@ export const gitData: Card[] = [
         img: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1465277717i/30365702._UY630_SR1200,630_.jpg',
         href: 'https://git-scm.com/book/en/v2',
         tags: ['book', 'comprehensive'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -155,6 +192,8 @@ export const gitData: Card[] = [
         img: 'https://help.gitkraken.com/wp-content/uploads/draganddrop.gif',
         href: 'https://www.gitkraken.com/learn/git/tutorials',
         tags: ['guide', 'visual'],
+        isFavorite: true
+
     }
 ];
 
@@ -167,6 +206,8 @@ export const cssData: Card[] = [
         img: 'https://tse2.mm.bing.net/th/id/OIP.ukqO-RMimtJEy6C84SzEAgAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://uiverse.io/',
         tags: ['components', 'designs'],
+        isFavorite: true
+
     },
     {
         id: '2',
@@ -176,6 +217,8 @@ export const cssData: Card[] = [
         img: 'https://bentogrids.com/images/og.png',
         href: 'https://bentogrids.com/',
         tags: ['templates', 'layout'],
+        isFavorite: true
+
     },
     {
         id: '3',
@@ -185,6 +228,8 @@ export const cssData: Card[] = [
         img: 'https://www.sliderrevolution.com/wp-content/uploads/2023/08/Animista.jpg',
         href: 'https://animista.net/',
         tags: ['animations', 'css'],
+        isFavorite: true
+
     },
     {
         id: '4',
@@ -194,6 +239,8 @@ export const cssData: Card[] = [
         img: 'https://benrito.net/images/neumorphism-io-960w.png',
         href: 'https://neumorphism.io/',
         tags: ['generator', 'neumorphism'],
+        isFavorite: false
+
     },
     {
         id: '5',
@@ -203,6 +250,8 @@ export const cssData: Card[] = [
         img: 'https://static.vecteezy.com/system/resources/previews/003/107/882/non_2x/modern-glassmorphism-icon-free-vector.jpg',
         href: 'https://hype4.academy/tools/glassmorphism-generator',
         tags: ['generator', 'glassmorphism'],
+        isFavorite: false
+
     },
     {
         id: '6',
@@ -212,6 +261,8 @@ export const cssData: Card[] = [
         img: 'https://th.bing.com/th/id/R.370117d89b4887e2659cf01738093445?rik=DfwaK8Urf7YYwg&pid=ImgRaw&r=0',
         href: 'https://mycolor.space/',
         tags: ['palette', 'colors'],
+        isFavorite: false
+
     },
     {
         id: '7',
@@ -221,6 +272,8 @@ export const cssData: Card[] = [
         img: 'https://tse1.mm.bing.net/th/id/OIP.fQdbxQ1AbZNEpVyrXiFGhgHaD0?rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://flexboxfroggy.com/',
         tags: ['game', 'flexbox'],
+        isFavorite: true
+
     },
     {
         id: '8',
@@ -230,6 +283,8 @@ export const cssData: Card[] = [
         img: 'https://th.bing.com/th/id/R.76f456545a2c94cf952813bdf53a1ae9?rik=mt8hGZzKv%2feSQQ&pid=ImgRaw&r=0',
         href: 'https://cssgridgarden.com/',
         tags: ['game', 'grid'],
+        isFavorite: true
+
     },
     {
         id: '9',
@@ -239,6 +294,8 @@ export const cssData: Card[] = [
         img: 'https://cssbattle.dev/images/banner.png',
         href: 'https://cssbattle.dev/',
         tags: ['game', 'challenges'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -248,6 +305,8 @@ export const cssData: Card[] = [
         img: 'https://tse1.mm.bing.net/th/id/OIP.V_kQep0RWichAyUEXwJjaAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://css-tricks.com/',
         tags: ['blog', 'snippets'],
+        isFavorite: false
+
     },
 ];
 
@@ -261,6 +320,8 @@ export const sqlData: Card[] = [
         img: 'https://tse4.mm.bing.net/th/id/OIP.R5cbGr7noYptDFPLEYZrpgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://database.build/',
         tags: ['generator', 'postgres'],
+        isFavorite: true
+
     },
     {
         id: '2',
@@ -270,6 +331,8 @@ export const sqlData: Card[] = [
         img: 'https://repository-images.githubusercontent.com/838212912/3063460a-4c7c-4b4d-aea5-1e9760aa7a37',
         href: 'https://chartdb.io/',
         tags: ['diagram', 'erd'],
+        isFavorite: true
+
     },
     {
         id: '3',
@@ -279,6 +342,8 @@ export const sqlData: Card[] = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNrzFDBFrnO44tIUxYbR01AiO0ZnVV7WawA&s',
         href: 'https://sqlbolt.com/',
         tags: ['interactive', 'learning'],
+        isFavorite: true
+
     },
     {
         id: '4',
@@ -288,6 +353,8 @@ export const sqlData: Card[] = [
         img: 'https://community.dbdiagram.io/uploads/default/original/1X/79d41edfc6a7fb2c1ec85192747c23d765698509.png',
         href: 'https://dbdiagram.io/',
         tags: ['diagram', 'visual'],
+        isFavorite: true
+
     },
     {
         id: '5',
@@ -297,6 +364,8 @@ export const sqlData: Card[] = [
         img: 'https://www.veeble.org/blog/wp-content/uploads/2023/12/Mode.png',
         href: 'https://mode.com/sql-tutorial/',
         tags: ['course', 'datasets'],
+        isFavorite: false
+
     },
     {
         id: '6',
@@ -306,6 +375,8 @@ export const sqlData: Card[] = [
         img: 'https://sqlzoo.net/static/malones.svg',
         href: 'https://sqlzoo.net/',
         tags: ['tutorial', 'exercises'],
+        isFavorite: false
+
     },
     {
         id: '7',
@@ -315,6 +386,8 @@ export const sqlData: Card[] = [
         img: 'https://diveintodigitalmarketing.com/wp-content/uploads/2024/09/w3schools-logo.png',
         href: 'https://www.w3schools.com/sql/',
         tags: ['tutorial', 'examples'],
+        isFavorite: false
+
     },
     {
         id: '8',
@@ -324,6 +397,8 @@ export const sqlData: Card[] = [
         img: 'https://repository-images.githubusercontent.com/597198795/b64f4fe8-f839-47ba-af83-9f15fa6c19e7',
         href: 'https://leetcode.com/problemset/database/',
         tags: ['problems', 'interview'],
+        isFavorite: false
+
     },
     {
         id: '9',
@@ -333,6 +408,8 @@ export const sqlData: Card[] = [
         img: 'https://avatars.githubusercontent.com/u/36822423?s=200&v=4',
         href: 'https://www.stratascratch.com/',
         tags: ['exercises', 'datasets'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -342,6 +419,8 @@ export const sqlData: Card[] = [
         img: 'https://cdn.prod.website-files.com/6613f45ec198bd785f4443d1/668832c41801ae5d22a45a1e_hackerrank-software.png',
         href: 'https://www.hackerrank.com/domains/sql',
         tags: ['challenges', 'ranking'],
+        isFavorite: false
+
     },
 ];
 
@@ -354,6 +433,8 @@ export const jsData: Card[] = [
         img: 'https://midu.dev/courses/ultimas-novedades-javascript.webp',
         href: 'https://www.aprendejavascript.dev/?code=014ba690-ff0c-442d-89b2-e98b7832f6d7',
         tags: ['course', 'interactive'],
+        isFavorite: true
+
     },
     {
         id: '2',
@@ -363,6 +444,8 @@ export const jsData: Card[] = [
         img: 'https://es.javascript.info/img/site_preview_en_512x512.png',
         href: 'https://javascript.info/',
         tags: ['documentation', 'modern'],
+        isFavorite: false
+
     },
     {
         id: '3',
@@ -372,6 +455,8 @@ export const jsData: Card[] = [
         img: 'https://repository-images.githubusercontent.com/112507086/c8627fc7-87fb-40a3-9548-5955abfdac96',
         href: 'https://www.30secondsofcode.org',
         tags: ['snippets', 'quick-reference'],
+        isFavorite: false
+
     },
     {
         id: '4',
@@ -381,6 +466,8 @@ export const jsData: Card[] = [
         img: 'https://miro.medium.com/v2/resize:fit:1200/1*MBnlYS10H9B02GvAKJ-XFw.png',
         href: 'https://www.codewars.com/',
         tags: ['challenges', 'coding'],
+        isFavorite: true
+
     },
     {
         id: '5',
@@ -390,6 +477,8 @@ export const jsData: Card[] = [
         img: 'https://wptavern.com/wp-content/uploads/2017/01/javascript30.png',
         href: 'https://javascript30.com/',
         tags: ['projects', 'practice'],
+        isFavorite: true
+
     },
     {
         id: '6',
@@ -399,15 +488,8 @@ export const jsData: Card[] = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmKag7J1zevsAEddLhG_umubTobPnJNdDVrg&s',
         href: 'https://jsfiddle.net/',
         tags: ['sandbox', 'share'],
-    },
-    {
-        id: '7',
-        title: 'CodePen',
-        author: 'CodePen',
-        description: 'Editor y comunidad para practicar HTML, CSS y JS',
-        img: 'https://niixer.com/wp-content/uploads/2023/09/Codepen.webp',
-        href: 'https://codepen.io/',
-        tags: ['editor', 'community'],
+        isFavorite: true
+
     },
     {
         id: '8',
@@ -417,6 +499,8 @@ export const jsData: Card[] = [
         img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFXxTsSVEjBo2YK3MKxHo2EwGy5tWY0bzzgA&s',
         href: 'https://leetcode.com/',
         tags: ['problems', 'algorithms'],
+        isFavorite: false
+
     },
     {
         id: '9',
@@ -426,6 +510,8 @@ export const jsData: Card[] = [
         img: 'https://eloquentjavascript.net/img/cover.jpg',
         href: 'https://eloquentjavascript.net/',
         tags: ['book', 'interactive'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -435,7 +521,9 @@ export const jsData: Card[] = [
         img: 'https://substackcdn.com/image/fetch/$s_!yQ1g!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe3940870-fc95-4dec-8fd6-9b55d46f8cd7_350x200.png',
         href: 'https://regexone.com/',
         tags: ['regex', 'exercises'],
+        isFavorite: true
     },
+
 ];
 
 export const deployData: Card[] = [
@@ -446,7 +534,8 @@ export const deployData: Card[] = [
         description: 'Hostinger gratuito para paginas estáticas',
         img: 'https://logowik.com/content/uploads/images/netlify9261.jpg',
         href: 'https://app.netlify.com/',
-            tags: ['static', 'frontend', 'CDN'],
+        tags: ['static', 'frontend', 'CDN'],
+        isFavorite: true
 
     },
     {
@@ -457,6 +546,8 @@ export const deployData: Card[] = [
         img: 'https://logowik.com/content/uploads/images/vercel1868.jpg',
         href: 'https://vercel.com/',
         tags: ['fullstack', 'Next.js', 'CDN'],
+        isFavorite: true
+
     },
     {
         id: '3',
@@ -466,6 +557,8 @@ export const deployData: Card[] = [
         img: 'https://blog.logrocket.com/wp-content/uploads/2023/11/surge-logo.png?resize=768',
         href: 'https://surge.sh/',
         tags: ['static', 'CLI', 'CDN'],
+        isFavorite: false
+
     },
     {
         id: '4',
@@ -475,6 +568,8 @@ export const deployData: Card[] = [
         img: 'https://thereadable.co/wp-content/uploads/2024/11/Render_logo_-_Black.jpg',
         href: 'https://render.com/',
         tags: ['fullstack', 'database', 'Docker'],
+        isFavorite: false
+
     },
     {
         id: '5',
@@ -484,6 +579,8 @@ export const deployData: Card[] = [
         img: 'https://repository-images.githubusercontent.com/308308522/536e2480-2299-11eb-95af-e1a31db1e9c9',
         href: 'https://glitch.com/',
         tags: ['fullstack', 'web-IDE', 'instant'],
+        isFavorite: false
+
     },
     {
         id: '8',
@@ -493,6 +590,8 @@ export const deployData: Card[] = [
         img: 'https://tse2.mm.bing.net/th/id/OIP.-vuw8qZdW2jsCUw_KvPFyQHaE0?rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://fly.io/',
         tags: ['edge', 'Docker', 'fullstack'],
+        isFavorite: false
+
     },
     {
         id: '9',
@@ -502,6 +601,8 @@ export const deployData: Card[] = [
         img: 'https://ik.imagekit.io/laxaar/1687416018252Firebase.jpg',
         href: 'https://firebase.google.com/products/hosting',
         tags: ['database', 'PWA', 'HTTPS'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -511,6 +612,8 @@ export const deployData: Card[] = [
         img: 'https://static.vecteezy.com/system/resources/previews/017/119/660/original/github-logo-git-hub-icon-with-text-on-white-and-black-background-free-vector.jpg',
         href: 'https://docs.github.com/en/pages',
         tags: ['static', 'documentation', 'git-push'],
+        isFavorite: true
+
     },
 ];
 export const documentationData: Card[] = [
@@ -522,6 +625,8 @@ export const documentationData: Card[] = [
         img: 'https://manz.dev/software/manzdev-mkweb.png',
         href: 'https://lenguajejs.com/roadmap/',
         tags: ['roadmap', 'technologies'],
+        isFavorite: true
+
     },
     {
         id: '2',
@@ -531,6 +636,8 @@ export const documentationData: Card[] = [
         img: 'https://media.licdn.com/dms/image/v2/D4E12AQHFzsp0JatGwQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1720499263572?e=2147483647&v=beta&t=PhBOXWZBFDl7Sk5TkN67wtGC-J8fRZ4lQxj0nmXP3Mw',
         href: 'https://devdocs.io',
         tags: ['documentation', 'unified'],
+        isFavorite: true
+
     },
     {
         id: '3',
@@ -540,6 +647,8 @@ export const documentationData: Card[] = [
         img: 'https://community.mozilla.org/wp-content/uploads/2023/03/mdn-web-docs-header.png',
         href: 'https://developer.mozilla.org/',
         tags: ['official', 'web'],
+        isFavorite: true
+
     },
     {
         id: '4',
@@ -549,6 +658,8 @@ export const documentationData: Card[] = [
         img: 'https://user-images.githubusercontent.com/29712634/81721690-e2fb5d80-9445-11ea-8602-4b2294c964f3.png',
         href: 'https://www.npmjs.com/',
         tags: ['documentation', 'package'],
+        isFavorite: true
+
     },
     {
         id: '6',
@@ -558,6 +669,8 @@ export const documentationData: Card[] = [
         img: 'https://asset.brandfetch.io/idpvfx7WEN/id775MPmpA.png',
         href: 'https://www.w3schools.com/',
         tags: ['tutorials', 'multi-tech'],
+        isFavorite: false
+
     },
     {
         id: '8',
@@ -567,6 +680,8 @@ export const documentationData: Card[] = [
         img: 'https://mms.businesswire.com/media/20210623005665/en/887084/23/logo-stackoverflow-2.jpg',
         href: 'https://stackoverflow.com/',
         tags: ['community', 'qa'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -576,6 +691,8 @@ export const documentationData: Card[] = [
         img: 'https://th.bing.com/th/id/R.427a3daf1921c30f0c72125ad0819e14?rik=i0dLK64jGVoeUg&pid=ImgRaw&r=0',
         href: 'https://nodejs.org/en/docs',
         tags: ['official', 'nodejs'],
+        isFavorite: false
+
     },
 ];
 
@@ -588,6 +705,8 @@ export const designData: Card[] = [
         img: 'https://tse1.mm.bing.net/th/id/OIP.08Sy9Ruwwt23R8ymlcdV0QHaFj?rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://coolors.co/',
         tags: ['palette', 'colors'],
+        isFavorite: false
+
     },
     {
         id: '2',
@@ -597,6 +716,8 @@ export const designData: Card[] = [
         img: 'https://www.figma.com/community/thumbnail?resource_id=1200930158268112554&resource_type=plugin',
         href: 'https://www.svgrepo.com/',
         tags: ['icons', 'svg'],
+        isFavorite: true
+
     },
     {
         id: '3',
@@ -606,6 +727,8 @@ export const designData: Card[] = [
         img: 'https://www.creativosonline.org/wp-content/uploads/2023/03/Google-Fonts.jpg',
         href: 'https://fonts.google.com/',
         tags: ['fonts', 'web'],
+        isFavorite: true
+
     },
     {
         id: '4',
@@ -615,6 +738,8 @@ export const designData: Card[] = [
         img: 'https://th.bing.com/th/id/R.5272c32f1f45c44a3a1eec83567c8176?rik=zbFZP1iHLI1Ahg&pid=ImgRaw&r=0',
         href: 'https://haikei.app/',
         tags: ['generator', 'backgrounds'],
+        isFavorite: true
+
     },
     {
         id: '5',
@@ -624,6 +749,8 @@ export const designData: Card[] = [
         img: 'https://pigment.shapefactory.co/static/images/ogimage.jpg',
         href: 'https://pigment.shapefactory.co/',
         tags: ['palette', 'gradients'],
+        isFavorite: true
+
     },
     {
         id: '6',
@@ -633,6 +760,8 @@ export const designData: Card[] = [
         img: 'https://plus.excalidraw.com/twitter_card.png?v1',
         href: 'https://excalidraw.com/',
         tags: ['diagrams', 'collaborative'],
+        isFavorite: true
+
     },
     {
         id: '7',
@@ -642,6 +771,8 @@ export const designData: Card[] = [
         img: 'https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/05/dribbble-logo.png',
         href: 'https://dribbble.com/',
         tags: ['inspiration', 'community'],
+        isFavorite: false
+
     },
     {
         id: '8',
@@ -651,6 +782,8 @@ export const designData: Card[] = [
         img: 'https://th.bing.com/th/id/OIP.TORd20o2Fiq-7ylCz4lQjgHaEv?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://www.behance.net/',
         tags: ['portfolios', 'inspiration'],
+        isFavorite: false
+
     },
     {
         id: '9',
@@ -660,6 +793,8 @@ export const designData: Card[] = [
         img: 'https://1000logos.net/wp-content/uploads/2024/09/Figma-Logo.jpg',
         href: 'https://www.figma.com/community',
         tags: ['resources', 'ui'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -669,7 +804,9 @@ export const designData: Card[] = [
         img: 'https://cdn.dribbble.com/users/2374674/screenshots/16300477/firasans_4x.png',
         href: 'https://www.fontpair.co/',
         tags: ['typography', 'pairing'],
+        isFavorite: false
     },
+
     {
         id: '11',
         title: 'Color Hunt',
@@ -678,34 +815,42 @@ export const designData: Card[] = [
         img: 'https://th.bing.com/th/id/R.9fa2887d2b2095e0195a21fbd0852980?rik=qyNTFz72RKYueg&pid=ImgRaw&r=0',
         href: 'https://colorhunt.co/',
         tags: ['palette', 'trending'],
+        isFavorite: false
+
     },
 
     {
-        id: '13',
+        id: '12',
         title: 'Ray.so',
         author: 'Ray.so',
         description: 'Genera capturas de código con estilo limpio y personalizable para compartir en redes.',
         img: 'https://yellow-cdn.veclightyear.com/9c1531b0/613c79ed-f4d2-4981-ae3a-68880db60b90.png?x-oss-process=image/format,webp/resize,w_1200,h_600,m_fill/quality,q_85',
         href: 'https://ray.so/',
         tags: ['screenshots', 'code'],
+        isFavorite: true
+
     },
     {
-        id: '14',
-        title: 'codi.link',
-        author: 'MiduDev',
-        description: 'Editor de codigo en tiempo real html, css y js',
-        img: 'https://i.ytimg.com/vi/EsE8MvxJTdA/maxresdefault.jpg',
-        href: 'https://codi.link/',
-        tags: ['editor', 'realtime'],
-    },
-    {
-        id: '15',
+        id: '13',
         title: 'Kaboompics',
-        author: 'MiduDev',
-        description: 'Editor de codigo en tiempo real html, css y js',
+        author: '',
+        description: 'Biblioteca gratuita de imagenes en 4k',
         img: 'https://cdn-1.webcatalog.io/catalog/kaboompics/kaboompics-social-preview.png?v=1714774851537',
         href: 'https://kaboompics.com/',
         tags: ['photos', 'stock'],
+        isFavorite: true
+
+    },
+    {
+        id: '14',
+        title: 'SVGOMG',
+        author: 'SVGOMG',
+        description: 'Optimizador de svg',
+        img: 'https://jakearchibald.github.io/svgomg/imgs/icon.png',
+        href: 'https://optimize.svgomg.net/',
+        tags: ['SVG', 'Optimize'],
+        isFavorite: false
+
     },
 ];
 
@@ -718,6 +863,8 @@ export const apisData: Card[] = [
         href: "https://openrouter.ai/",
         img: "https://miro.medium.com/v2/resize:fit:1200/0*zuYZ0-wGZ4G2Didt.png",
         tags: ['api', 'multi-models'],
+        isFavorite: true
+
     },
     {
         id: '2',
@@ -727,6 +874,8 @@ export const apisData: Card[] = [
         href: "https://stripe.com/docs/api",
         img: "https://th.bing.com/th/id/R.1165fed80b1827926d282051d1b63d10?rik=QRM8Qm2%2fkQX4Mw&pid=ImgRaw&r=0",
         tags: ['payments', 'integration'],
+        isFavorite: true
+
     },
     {
         id: '3',
@@ -736,6 +885,8 @@ export const apisData: Card[] = [
         href: "https://rapidapi.com/hub",
         img: "https://mms.businesswire.com/media/20220323005325/en/1398284/23/RapidAPI_logo_blue_(1).jpg",
         tags: ['marketplace', 'testing'],
+        isFavorite: true
+
     },
     {
         id: '4',
@@ -745,6 +896,8 @@ export const apisData: Card[] = [
         href: "https://dummyjson.com/",
         img: "https://preview.redd.it/i-built-an-open-source-dummy-json-api-using-node-which-v0-oq64merbjdlc1.png?width=1206&format=png&auto=webp&s=32cc81cf66df20a9f1124a9037d31d0cd12c5e86",
         tags: ['mock-data', 'practice'],
+        isFavorite: true
+
     }
 ];
 export const videosData: Card[] = [
@@ -756,6 +909,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=Osy0yuxuEOw&t=1672s",
         img: "https://i.ytimg.com/vi/Osy0yuxuEOw/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCJZqfnMOdFFR7EP2YZuaIxnmvMFg",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '2',
@@ -765,6 +920,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=NsaAN6diuw4",
         img: "https://i.ytimg.com/vi/NsaAN6diuw4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAczsw79nGY9LfjQjJWWBJ9UwZZLg",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '3',
@@ -774,6 +931,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=1hpc70_OoAg/",
         img: "https://i.ytimg.com/vi/1hpc70_OoAg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBFxFtQa81lPmFW9BFQ73x-5MxY1g",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '4',
@@ -783,6 +942,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=Qe7MytTo7Vg&t=432s",
         img: "https://i.ytimg.com/vi/Qe7MytTo7Vg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDRVzBoqWehDXpl_z1dCceQexXWDg",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '5',
@@ -792,6 +953,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=N8Xt5rP_DUo",
         img: "https://i.ytimg.com/vi/N8Xt5rP_DUo/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCg_C859Ba1Wk6aUaLVMMuCw4dfPw",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '6',
@@ -801,6 +964,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=zFbTXe1yFGA&t=817s",
         img: "https://i.ytimg.com/vi/zFbTXe1yFGA/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDJDN5Y8WBPDlKNLLn8W28cwyBttQ",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '7',
@@ -810,6 +975,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=ymuBowcODVU",
         img: "https://i.ytimg.com/vi/ymuBowcODVU/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD4UXl9Pjy5GXNXMGiPpqwtDeaweQ",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '8',
@@ -819,6 +986,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=7iobxzd_2wY&list=PLUofhDIg_38q4D0xNWp7FEHOTcZhjWJ29",
         img: "https://i.ytimg.com/vi/7iobxzd_2wY/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCbVv5emu9CK1dGD1A520aNlAQbTw",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '9',
@@ -828,6 +997,8 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=ELSm-G201Ls&t=21646s",
         img: "https://i.ytimg.com/vi/ELSm-G201Ls/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLk90gBLHy_TuBTM8MXQz06ffgDg",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
     {
         id: '10',
@@ -837,5 +1008,7 @@ export const videosData: Card[] = [
         href: "https://www.youtube.com/watch?v=CdX02ruaCGk",
         img: "https://i.ytimg.com/vi/CdX02ruaCGk/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCmbKY5vz7aHGMYflMhRuULV766cg",
         tags: ['mock-data', 'practice'],
+        isFavorite: false
+
     },
 ]
