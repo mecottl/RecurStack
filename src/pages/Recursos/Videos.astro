@@ -2,25 +2,9 @@
 import Layout from '../../layouts/LayoutVid.astro';
 import InfoCards from '../../components/InfoCard.astro';
 import {videosData} from '../../lib/data'
-import '../../styles/Videos.css'
-import HeaderRecurso from "../../components/HeaderRecIndex.astro";
+import '../../styles/pages.css'
 ---
 <Layout title="Videos">
-    <header class="navbar">
-      <div class="nav-center">
-        <div class="recursos">
-				<HeaderRecurso href="/Recursos/HTML">HTML</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/CSS">CSS</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/JS">JS</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/SQL">SQL</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/GIT">GIT</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/Design">Design</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/Deploy">Deploy</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/Documentation">Documentation</HeaderRecurso>
-				<HeaderRecurso href="/Recursos/APIS">Apis</HeaderRecurso>
-			</div>
-    </div>
-    </header>
   <div class="cards">
     {
       //data.map(card => <InfoCards card={card} />)
