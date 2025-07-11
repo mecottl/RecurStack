@@ -446,7 +446,8 @@ export const deployData: Card[] = [
         description: 'Hostinger gratuito para paginas estáticas',
         img: 'https://logowik.com/content/uploads/images/netlify9261.jpg',
         href: 'https://app.netlify.com/',
-        tags: ['hosting', 'static'],
+            tags: ['static', 'frontend', 'CDN'],
+
     },
     {
         id: '2',
@@ -455,34 +456,34 @@ export const deployData: Card[] = [
         description: 'Deploy sencillo de proyectos front-end y full stack',
         img: 'https://logowik.com/content/uploads/images/vercel1868.jpg',
         href: 'https://vercel.com/',
-        tags: ['deploy', 'frontend'],
+        tags: ['fullstack', 'Next.js', 'CDN'],
     },
     {
-        id: '5',
+        id: '3',
         title: 'Surge',
         author: 'Surge',
         description: 'Despliegue simple de sitios estáticos desde la terminal',
         img: 'https://blog.logrocket.com/wp-content/uploads/2023/11/surge-logo.png?resize=768',
         href: 'https://surge.sh/',
-        tags: ['deploy', 'cli'],
+        tags: ['static', 'CLI', 'CDN'],
     },
     {
-        id: '6',
+        id: '4',
         title: 'Render',
         author: 'Render.com',
         description: 'Despliegue gratuito de frontend y backend con bases de datos',
         img: 'https://thereadable.co/wp-content/uploads/2024/11/Render_logo_-_Black.jpg',
         href: 'https://render.com/',
-        tags: ['deploy', 'full-stack'],
+        tags: ['fullstack', 'database', 'Docker'],
     },
     {
-        id: '7',
+        id: '5',
         title: 'Glitch',
         author: 'Glitch',
         description: 'Despliegue instantáneo de apps web, ideal para prototipos',
         img: 'https://repository-images.githubusercontent.com/308308522/536e2480-2299-11eb-95af-e1a31db1e9c9',
         href: 'https://glitch.com/',
-        tags: ['prototyping', 'instant'],
+        tags: ['fullstack', 'web-IDE', 'instant'],
     },
     {
         id: '8',
@@ -491,7 +492,7 @@ export const deployData: Card[] = [
         description: 'Despliegue de apps en servidores cercanos al usuario',
         img: 'https://tse2.mm.bing.net/th/id/OIP.-vuw8qZdW2jsCUw_KvPFyQHaE0?rs=1&pid=ImgDetMain&o=7&rm=3',
         href: 'https://fly.io/',
-        tags: ['deploy', 'edge'],
+        tags: ['edge', 'Docker', 'fullstack'],
     },
     {
         id: '9',
@@ -500,7 +501,7 @@ export const deployData: Card[] = [
         description: 'Hosting para sitios web rápidos y seguros con HTTPS',
         img: 'https://ik.imagekit.io/laxaar/1687416018252Firebase.jpg',
         href: 'https://firebase.google.com/products/hosting',
-        tags: ['hosting', 'secure'],
+        tags: ['database', 'PWA', 'HTTPS'],
     },
     {
         id: '10',
@@ -509,7 +510,7 @@ export const deployData: Card[] = [
         description: 'Documentación oficial para desplegar con GitHub Pages',
         img: 'https://static.vecteezy.com/system/resources/previews/017/119/660/original/github-logo-git-hub-icon-with-text-on-white-and-black-background-free-vector.jpg',
         href: 'https://docs.github.com/en/pages',
-        tags: ['documentation', 'HTML - CSS'],
+        tags: ['static', 'documentation', 'git-push'],
     },
 ];
 export const documentationData: Card[] = [
