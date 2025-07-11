@@ -1,6 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import HeaderRecurso from "../components/HeaderRecurso.astro";
+import HeaderRecurso from "../components/HeaderRecVid.astro";
 import Home from "../components/Home.astro";
 import "../styles/Layout.css";
 
@@ -25,18 +25,16 @@ const { title } = Astro.props;
 			href="/logo.svg"
 			<link
 			rel="preconnect"
-			href="https://fonts.googleapis.com"
-		/>
+			href="https://fonts.googleapis.com"/>
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
-		/></head
-	>>
-	<meta name="generator" content={Astro.generator} />
-	<title>{title} | Recursos Dev</title>
-	<ViewTransitions />
-
+		/>
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Recursos Dev</title>
+		<ViewTransitions />
+	</head>
 	<body>
 		<aside class="nav-container">
 			<nav class="nav-btn" aria-label="Navegación principal">

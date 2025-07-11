@@ -1,0 +1,54 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #D7C9C1;
+  font-family: 'Segoe UI', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.recursos {
+    display: flex;
+    flex-direction: row; /* fuerza horizontal */
+    gap: 1rem;
+    white-space: nowrap;
+    overflow-x: auto; /* permite deslizar si no cabe */
+}
+
+.recursos a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.recursos a:hover {
+color: var(--color-text);
+background-color: #4A3B31;
+transform: translateY(-2px);
+border-color: #6D4C41;
+}

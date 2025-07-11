@@ -85,38 +85,6 @@ section {
   display: flex;
   justify-content: center;
 }
-
-/* Images */
-.images img {
-  width: 500px;
-  height: auto;
-  margin: 0.5rem;
-  border-radius: 10px;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.images img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(179, 38, 30, 0.4); /* efecto escarlata */
-}
-
-.image-grid {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  margin-top: 1rem;
-}
-
-.image-grid li {
-  flex: 1 1 320px;
-  display: flex;
-  justify-content: center;
-}
-
 h1{
     font-family: "Odibee Sans", sans-serif;
     display: flex;
@@ -250,15 +218,6 @@ h1{
 main {
   margin-top: 2rem;
   padding: 1rem;
-}
-.search-box {
-  padding: 0.4rem 0.75rem;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  background-color: white;
-  color: black;
-  width: 180px;
 }
 
 /* From Uiverse.io by alexmaracinaru */ 
