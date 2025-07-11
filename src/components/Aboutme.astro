@@ -45,7 +45,7 @@ const { Name, Avatar, Background, Email, GitHub, Instagram } = Astro.props;
   <!-- Correo electrónico -->
   {Email && (
     <div class="card__email">
-      <a href={`mailto:${Email}`}> <Icons icon="Email"/>{Email}</a>
+      <a href={`mailto:${Email}`}>{Email}</a>
     </div>
   )}
 </div>
