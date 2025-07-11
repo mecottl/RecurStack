@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/LayoutVid.astro';
+import InfoCards from '../../components/InfoCard.astro';
+import {videosData} from '../../lib/data'
+import '../../styles/pages.css'
+---
+<Layout title="Videos">
+  <div class="cards">
+    {
+      //data.map(card => <InfoCards card={card} />)
+      videosData.map(card => <InfoCards card={card} />)
+    }
+  </div>
+</Layout>
