@@ -60,10 +60,6 @@ section {
 }
 
 /* Videos */
-.videos h2 {
-  text-align: center;
-  color: var(--color-text);
-}
 .video-grid {
   display: flex;
   gap: 1rem;
@@ -91,13 +87,6 @@ section {
 }
 
 /* Images */
-.images {
-  text-align: center;
-  width: min(1400px, 100vw);
-  margin: auto;
-  padding: 100px 20px;
-}
-
 .images img {
   width: 500px;
   height: auto;
@@ -129,7 +118,7 @@ section {
 }
 
 h1{
-     font-family: "Odibee Sans", sans-serif;
+    font-family: "Odibee Sans", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -775,13 +764,277 @@ main {
 }
 
 /* Para pantallas pequeñas (responsive) */
-@media (max-width: 768px) {
-  .paragraph {
-    padding: 15px;
-    line-height: 1.5;
+/* Variables y estilos base se mantienen igual */
+
+/* ==================== */
+/* MEDIA QUERIES MEJORADAS */
+/* ==================== */
+
+/* Pantallas grandes (desktop) - se usan los estilos base */
+
+/* Tablet (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  body {
+    padding: 1.5rem;
   }
-  .paragraph p {
-    font-size: 1rem;
-    text-align: left; /* En móviles es mejor alineación izquierda */
+  
+  header img {
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .banner .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .banner .content h1 {
+    font-size: 8em;
+    margin-bottom: 1rem;
+  }
+  
+  .banner .content .right {
+    text-align: center;
+    transform: none;
+    margin-top: 2rem;
+  }
+  
+  .banner .content .right h2 {
+    font-size: 4em;
+  }
+  
+  .banner .image {
+    height: 400px;
+  }
+  
+  .banner .image img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  .technologies ul,
+  .video-grid {
+    padding: 50px 15px;
+  }
+  
+  .cards-container {
+    justify-content: center;
+  }
+}
+
+/* Tablet pequeña (600px - 767px) */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 6em;
+  }
+  
+  .banner .content h1 {
+    font-size: 6em;
+  }
+  
+  .banner .content .right h2 {
+    font-size: 3em;
+  }
+  
+  .banner .image {
+    height: 350px;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-center {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .recursos {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .search-box {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .images img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* Móvil (480px - 599px) */
+@media screen and (max-width: 599px) {
+  body {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 4em;
+  }
+  
+  .banner .content h1 {
+    font-size: 4em;
+  }
+  
+  .banner .content .right h2 {
+    font-size: 2em;
+  }
+  
+  .banner .image {
+    height: 250px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .technologies ul,
+  .video-grid {
+    padding: 30px 10px;
+  }
+  
+  .video-grid iframe {
+    height: 200px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .brutalist-button {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Móvil pequeño (hasta 479px) */
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 3em;
+  }
+  
+  .banner .content h1 {
+    font-size: 3em;
+  }
+  
+  .banner .image {
+    height: 200px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .navbar {
+    padding: 0.75rem;
+  }
+  
+  .recursos a {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  
+  .card__avatar {
+    width: 80px;
+    height: 80px;
+    top: 80px;
+  }
+  
+  .card__title {
+    margin-top: 50px;
+  }
+  
+  .brutalist-button {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .button-text span {
+    font-size: 0.8rem;
+  }
+}
+/* Añade esto al final de tu CSS */
+/* Ajustes finos de espaciado responsive */
+@media (max-width: 1024px) {
+  body {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .technologies ul,
+  .video-grid {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  
+  .banner .content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .card {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  section {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .images img,
+  .video-grid iframe {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Ajuste específico para el componente "Trending Technology" */
+  .trending-tech {
+    padding: 0 0.5rem;
+  }
+  
+  .trending-tech h2 {
+    padding-left: 0.5rem;
+  }
+  
+  .tech-badge {
+    margin: 0 0.25rem;
   }
 }
