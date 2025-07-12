@@ -9,9 +9,11 @@ interface Props {
 
 const { card } = Astro.props as Props;
 const { title, author, description, img, href, tags, isFavorite } = card;
+const safeHref = href.match(/^https?:\/\//i) ? href : `https://${href}`;
+
 ---
 <a
-  href={href}
+  href={safeHref}
   class="card-container glass-card"
   target="_blank"
   rel="noopener noreferrer"
@@ -37,7 +39,7 @@ const { title, author, description, img, href, tags, isFavorite } = card;
 
     <!-- Aquí van las tags -->
     <div class="tag-container">
-      {tags.map((tag) => (
+      {tags?.map((tag) => (
         <span class={`tag tag--${tag}`}>{tag}</span>
       ))}
     </div>
