@@ -1,0 +1,74 @@
+---
+// src/pages/mas.astro
+import Layout from '../../layouts/Layout.astro';
+import InfoCard from '../../components/InfoCard.astro';
+import { createClient } from '@supabase/supabase-js';
+import '../../styles/formCard.css'
+const supabase = createClient(
+  import.meta.env.SUPABASE_URL,
+  import.meta.env.SUPABASE_ANON_KEY
+);
+
+// SSR: trae todas las cards ordenadas por favoritas primero
+const { data: cards = [], error } = await supabase
+  .from('cards')
+  .select('*')
+  .order('is_favorite', { ascending: false })
+  .order('inserted_at', { ascending: false });
+
+if (error) {
+  console.error(error.message);
+}
+---
+
+
+<Layout title='Comunidad'>
+  <!-- Listado de cards usando siempre InfoCard -->
+  <section class="cards-container">
+    {cards.map(card => (
+      <InfoCard card={card} />
+    ))}
+  </section>
+
+  <!-- Formulario para añadir nuevas cards -->
+  <form id="new-card-form" class="card-form">
+    <input name="title" required placeholder="Título" />
+    <input name="author" placeholder="Autor" />
+    <input name="description" required placeholder="Descripción" />
+    <input name="img" required placeholder="URL imagen" />
+    <input name="href" required placeholder="Enlace externo" />
+    <input name="tags" placeholder="Tags (coma-separadas)" />
+    <button type="submit">Añadir Card</button>
+  </form>
+
+  <script type="module">
+    const form = document.getElementById('new-card-form');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const fd = new FormData(form);
+      const payload = {
+        title: fd.get('title'),
+        author: fd.get('author'),
+        description: fd.get('description'),
+        img: fd.get('img'),
+        href: fd.get('href'),
+        tags: fd.get('tags')
+          .split(',')
+          .map(t => t.trim())
+          .filter(Boolean),
+      };
+      const res = await fetch('/api/cards', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        // Recarga para ver la nueva card
+        window.location.reload();
+      } else {
+        console.error(await res.text());
+        alert('Error al crear la card');
+      }
+    });
+  </script>
+</Layout>

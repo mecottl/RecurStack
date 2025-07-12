@@ -1,11 +1,11 @@
 export interface Card {
     id: string;
     title: string;
-    author: string;
+    author?: string;
     description: string;
     img: string;
     href: string;
-    tags: string[];
+    tags?: string[];
     isFavorite: boolean;
 
 }
