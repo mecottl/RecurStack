@@ -1,5 +1,8 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import vercel from '@astrojs/vercel';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  // Salida en modo server para exponer src/pages/api/*.ts
+  output: 'server',
+  adapter: vercel(),
+});
