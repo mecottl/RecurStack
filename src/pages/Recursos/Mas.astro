@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import InfoCard from "../../components/InfoCard.astro";
 import { createClient } from "@supabase/supabase-js";
 import "../../styles/formCard.css";
+import "../../styles/pages.css";
 
 const supabase = createClient(
     import.meta.env.SUPABASE_URL,
@@ -22,21 +23,26 @@ const cards = data ?? [];
 ---
 
 <Layout title="Comunidad">
+    <h1 class="h1-form">
+        Colabora con la comunidad compartiendonos tus recursos!!
+    </h1>
+    <!-- Formulario para añadir nuevas cards -->
+    <div class="form-container">
+        <form id="new-card-form" class="card-form">
+            <input name="title" required placeholder="Título" />
+            <input name="author" placeholder="Autor" />
+            <input name="description" required placeholder="Descripción" />
+            <input name="img" required placeholder="URL imagen" />
+            <input name="href" required placeholder="Enlace externo" />
+            <input name="tags" placeholder="Tags (coma-separadas)" />
+            <button type="submit">Añadir Card</button>
+        </form>
+    </div>
+
     <!-- Listado de cards usando siempre InfoCard -->
-    <section class="cards-container">
+    <section class="cards">
         {cards.map((card) => <InfoCard card={card} />)}
     </section>
-
-    <!-- Formulario para añadir nuevas cards -->
-    <form id="new-card-form" class="card-form">
-        <input name="title" required placeholder="Título" />
-        <input name="author" placeholder="Autor" />
-        <input name="description" required placeholder="Descripción" />
-        <input name="img" required placeholder="URL imagen" />
-        <input name="href" required placeholder="Enlace externo" />
-        <input name="tags" placeholder="Tags (coma-separadas)" />
-        <button type="submit">Añadir Card</button>
-    </form>
 
     <script type="module">
         const form = document.getElementById("new-card-form");

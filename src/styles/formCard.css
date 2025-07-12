@@ -1,3 +1,104 @@
-h1{
-    color: yellow;   
+/* contenedor principal, estilo “card” horizontal */
+.form-container {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    box-shadow:
+        3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 30px;
+    color: var(--text);
+
+}
+
+.h1-form {
+    color: var(--color-claro);
+    margin: 30px;
+    font-family: 'Fira Code', system-ui, -apple-system,  sans-serif;
+    text-shadow: 0px 3px 5px rgba(96, 96, 96, 0.278);
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(text);
+    margin: 25px;
+}
+
+form input {
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0 7px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow:
+        3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px var(--text-secundary);
+    transition: .5s;
+}
+
+form input::placeholder {
+    color: var(--text-secundary);
+}
+
+
+form input:focus {
+    box-shadow:
+        3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px var(--text-secundary),
+        inset 3px 3px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 6px var(--text-secundary);
+    scale: 1.1;
+
+}
+
+form button {
+    width: 100px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0 7px;
+    border-radius: 6px;
+    color: var(--text);
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow:
+        3px 3px 10px rgba(0, 0, 0, 1),
+        -1px -1px 6px var(--text-secundary);
+    transition: .5s;
+}
+
+form input:hover {
+    scale: 1.1;
+    box-shadow:
+        -3px -3px 10px rgba(0, 0, 0, 1),
+        1px 1px 6px var(--text-secundary);
+}
+
+form button:hover {
+    scale: 1.1;
+    box-shadow:
+        -3px -3px 10px rgba(0, 0, 0, 1),
+        1px 1px 6px var(--text-secundary);
+}
+
+form button:active {
+    box-shadow:
+        -3px -3px 10px rgba(0, 0, 0, 1),
+        1px 1px 6px var(--text-secundary),
+        inset 3px 3px 10px rgba(0, 0, 0, 1),
+        inset -1px -1px 6px var(--text-secundary);
+    scale: 1;
 }
